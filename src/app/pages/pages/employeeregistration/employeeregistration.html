@@ -1,0 +1,176 @@
+<div class="row">
+  <div class="col-lg-12">
+    <amexio-card-pane>
+      <amexio-pane-header>
+        Employee Registration
+      </amexio-pane-header>
+      <amexio-pane-body>
+        <amexio-tab-pane>
+          <amexio-tab title="Profile" [active]="true">
+            <div class="row" >
+              <div class="col-lg-6">
+                <amexio-text-input [fieldLabel]="'First Name'" name="fname"
+                                   [placeholder]="'Enter name'"
+                                   [enablePopOver]="true"
+                                   [allowBlank]="false"
+                                   [errorMsg]="'Please enter first name'"
+                                   [minLength]="3" [maxLength]="15" [minErrorMsg]="'First name should be minimum 3 characters'"
+                                   [maxErrorMsg]="'First name should be less than 15 characters'"
+                >
+                </amexio-text-input>
+              </div>
+              <div class="col-lg-6">
+                <amexio-text-input [fieldLabel]="'Surname'" name="lname"
+                                   [placeholder]="'Enter surname'"
+                                   [enablePopOver]="true"
+                                   [allowBlank]="false"
+                                   [errorMsg]="'Please enter Surname'"
+                                   [minLength]="3" [maxLength]="15" [minErrorMsg]="'Surname should be minimum 3 characters'"
+                                   [maxErrorMsg]="'Surname should be less than 15 characters'"
+                >
+                </amexio-text-input>
+              </div>
+            </div>
+              <div class="row">
+              <div class="col-lg-6">
+                <amexio-date-time-picker
+                  [fieldLabel]="'Date of Birth'"
+                  [timepicker]="false"
+                  [datepicker]="datepickerOpts"
+                  [(ngModel)]="currentDate">
+                </amexio-date-time-picker>
+              </div>
+              <div class="col-lg-6">
+                <amexio-text-input [fieldLabel]="'Phone'" name="phone"
+                                   [placeholder]="'Enter phone number'"
+                                   [enablePopOver]="true"
+                                   [allowBlank]="false"
+                                   [errorMsg]="'Please enter phone number'"
+                                   [minLength]="10" [minErrorMsg]="'Phone number should be 10 digits.'"
+                >
+                </amexio-text-input>
+              </div>
+              </div>
+                <div class="row">
+              <div class="col-lg-6">
+                <amexio-password-input
+                  [fieldLabel]="'Password'" name="password"
+                  [placeholder]="'Enter password'"
+                  [enablePopOver]="true"
+                  [allowBlank]="false"
+                  [errorMsg]="'Please enter Password'"
+                  [minLength]="5" [minErrorMsg]="'Password length should be grater than 5'"
+                  [minLength]="10" [minErrorMsg]="'Password length should be less than 10'"
+                ></amexio-password-input>
+              </div>
+              <div class="col-lg-6">
+                <amexio-password-input
+                  [fieldLabel]="'Confirm Password'" name="confirmpassword"
+                  [placeholder]="'Enter confirm password'"
+                  [enablePopOver]="true"
+                  [allowBlank]="false"
+                  [errorMsg]="'Please enter confirm password'"
+                  [minLength]="5" [minErrorMsg]="'Password length should be grater than 5'"
+                  [minLength]="10" [minErrorMsg]="'Password length should be less than 10'"
+                ></amexio-password-input>
+              </div>
+            </div>
+          </amexio-tab>
+          <amexio-tab title="Address" >
+            <div class="row" >
+              <div class="col-lg-4">
+                <amexio-dropdown
+                  [(ngModel)]="countryName"
+                  [placeholder]="'Choose country'"
+                  name="countryName"
+                  [dataReader]="'response.data'"
+                  [fieldLabel]="'Country'"
+                  [httpUrl]="'assets/data/country.json'"
+                  [httpMethod]="'get'"
+                  [displayField]="'countryName'"
+                  [valueField]="'countryId'"
+                  [width]="'100%'"
+                  (onSingleSelect)="getCountry($event)">
+                </amexio-dropdown>
+              </div>
+              <div class="col-lg-4">
+                <amexio-dropdown
+                  [(ngModel)]="stateName"
+                  [placeholder]="'Choose state'"
+                  name="stateName"
+                  [dataReader]="'response.data'"
+                  [fieldLabel]="'State'"
+                  [httpUrl]="'assets/data/state.json'"
+                  [httpMethod]="'get'"
+                  [displayField]="'stateName'"
+                  [valueField]="'stateCode'"
+                  [width]="'100%'"
+                  (onSingleSelect)="getState($event)">
+                </amexio-dropdown>
+              </div>
+              <div class="col-lg-4">
+                <amexio-dropdown
+                  [(ngModel)]="cityName"
+                  [placeholder]="'Choose city'"
+                  name="cityName"
+                  [dataReader]="'response.data'"
+                  [fieldLabel]="'City'"
+                  [httpUrl]="'assets/data/city.json'"
+                  [httpMethod]="'get'"
+                  [displayField]="'cityName'"
+                  [valueField]="'cityCode'"
+                  [width]="'100%'"
+                  (onSingleSelect)="getCity($event)">
+                </amexio-dropdown>
+             <br> </div>
+            </div>
+              <div class="row">
+              <div class="col-lg-6">
+                <amexio-textarea-input [fieldLabel]="'Address1'" name="Address1"
+                                       [placeholder]="'Enter address 1'"
+                                       [enablePopOver]="true"
+                                       [allowBlank]="true" [errorMsg]="'Please enter Address 1'"
+                                        [noOfrows]="'2'" [noOfCols]="'2'"
+                                       [popoverPlacement]="'top'">
+                </amexio-textarea-input>
+              </div>
+              <div class="col-lg-6">
+                <amexio-textarea-input [fieldLabel]="'Address2'" name="Address2"
+                                       [placeholder]="'Enter address 2'" [enablePopOver]="true"
+                                       [allowBlank]="true" [errorMsg]="'Please enter Address 2'"
+                                       [noOfrows]="'2'" [noOfCols]="'2'"
+                                       [popoverPlacement]="'top'">
+                </amexio-textarea-input>
+              </div>
+              </div>
+              <div class="row">
+              <div class="col-lg-6">
+                <amexio-text-input [fieldLabel]="'Pincode'" name="pincode"
+                                   [placeholder]="'Enter pincode'"
+                                   [errorMsg]="'Please enter pincode'"
+                                   [minLength]="6" [enablePopOver]="true"
+                                   [allowBlank]="false"
+                                   [minErrorMsg]="'Pincode should be 6 digits.'"
+                                   [maxLength]="6"  [maxErrorMsg]="'Pincode should be 6 digits.'"
+                                   >
+                </amexio-text-input>
+              </div>
+              <div class="col-lg-6">
+              </div>
+            </div>
+          </amexio-tab>
+        </amexio-tab-pane>
+      </amexio-pane-body>
+      <amexio-pane-action>
+        <div class="d-flex justify-content-end">
+          <div class="p-2">
+            <amexio-btn [label]="'Cancel'" [type]="'info'" [tooltipMessage]="'Save'"></amexio-btn>
+          </div>
+          <div class="p-2">
+            <amexio-btn [label]="'Save'" [type]="'primary'" [tooltipMessage]="'Save'"></amexio-btn>
+          </div>
+        </div>
+      </amexio-pane-action>
+    </amexio-card-pane>
+  </div>
+</div>

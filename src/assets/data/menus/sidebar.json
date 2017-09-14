@@ -1,0 +1,91 @@
+{
+  "data":[
+  {
+    "text": "Home",
+    "icon" : "fa fa-home fa-fw fa-lg",
+    "mdbIcon" : "home",
+    "routerLink" : "/home/dashboard",
+    "selected":true
+  },
+    {
+      "text": "Email",
+      "icon" : "fa fa-envelope fa-fw",
+      "mdbIcon" : "email",
+      "routerLink" : "/home/email"
+    },
+    {
+      "text": "Profile",
+      "icon" : "fa fa-user fa-fw",
+      "mdbIcon" : "account_box",
+      "routerLink" : "/home/profile"
+    },
+  {
+    "text": "Pages",
+    "icon" : "fa fa-id-card-o fa-fw",
+    "mdbIcon" : "pages",
+    "expand":true,
+    "childrens": [
+      {
+        "text": "Sample Form",
+        "icon" : "fa fa-laptop fa-fw",
+        "mdbIcon" : "create",
+        "routerLink":"/home/sample"
+      },
+      {
+        "text": "Login",
+        "mdbIcon":"open_in_browser",
+        "icon" : "fa fa-sign-in fa-fw",
+        "routerLink":"/home/login"
+      },
+      {
+        "text": "Register Employee",
+        "icon" : "fa fa-address-book-o fa-fw",
+        "mdbIcon":"perm_contact_calendar",
+        "routerLink":"/home/employee-registration"
+      },
+      {
+        "text": "Issue Status",
+        "icon" : "fa fa-exclamation fa-fw",
+        "mdbIcon":"playlist_add_check",
+        "routerLink":"/home/issue-status"
+      }
+    ]
+  },
+    {
+      "text": "Reports",
+      "icon" : "fa fa-picture-o fa-fw",
+      "mdbIcon":"assignment",
+      "expand":true,
+      "childrens": [
+        {
+          "text": "Issue",
+          "icon" : "fa fa-ticket fa-fw",
+          "mdbIcon":"bug_report",
+          "routerLink":"/home/issue"
+        },
+        {
+          "text": "Group By Issue",
+          "icon" : "fa fa-ticket fa-fw",
+          "mdbIcon":"link",
+          "routerLink":"/home/group-by-issue"
+        }
+      ]
+    },
+    {
+      "text": "Charts",
+      "icon" : "fa fa-bar-chart fa-fw",
+      "mdbIcon":"insert_chart",
+      "routerLink" : "/home/charts"
+    },
+    {
+      "text": "Maps",
+      "icon" : "fa fa-map-marker fa-fw",
+      "mdbIcon":"location_on",
+      "routerLink" : "/home/maps"
+    },{
+      "text": "Dashboard",
+      "icon" : "fa fa-television fa-fw",
+      "mdbIcon":"dashboard",
+      "routerLink" : "/home/dashboard-template"
+    }
+]}

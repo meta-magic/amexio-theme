@@ -1,0 +1,59 @@
+/* You can add global styles to this file, and also import other style files */
+
+.amexio-sidenavbar-sidenavleft  {
+  background-color: #424242 !important;
+  color: white;
+}
+
+
+.amexio-sidenavbar-sidenavleft >ul >li {
+  border-bottom: 1px solid #616161 !important;
+}
+
+.card-header {
+  padding: .45rem 1.25rem;
+  margin-bottom: 0;
+  background-color: #f7f7f9;
+  border-bottom: 1px solid rgba(0,0,0,.125);
+  font-weight: bold;
+}
+
+.card-footer {
+  padding: .45rem 1.25rem;
+  background-color: #f7f7f9;
+  border-top: 1px solid rgba(0,0,0,.125);
+}
+
+
+.card {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, .125);
+  border-radius: .0rem;
+  box-shadow: 5px 5px 5px #888888;
+}
+.navbar-light{
+  height: 64px;
+  width: 100%;
+  background-color: #0c84e4;
+  vertical-align: middle;
+  box-shadow: 2;
+  padding-left: 15px;
+  box-shadow: 0px 0px 2px 2px #666;
+}
+
+.amexio-sidenavbar-nav-link-a:hover{
+  color: #0c84e4 !important;
+}
+
+
+.a-link:hover{
+  color: #0c84e4 !important;
+}

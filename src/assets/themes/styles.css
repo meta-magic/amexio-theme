@@ -1,0 +1,185 @@
+/* You can add global styles to this file, and also import other style files */
+
+.amexio-sidenavbar-sidenavleft  {
+  background-color: #424242 !important;
+  color: white;
+}
+
+
+.amexio-sidenavbar-sidenavleft >ul >li {
+  border-bottom: 1px solid #616161 !important;
+}
+
+.card-header {
+  padding: .45rem 1.25rem;
+  margin-bottom: 0;
+  background-color: #f7f7f9;
+  border-bottom: 1px solid rgba(0,0,0,.125);
+  font-weight: bold;
+}
+
+.card-footer {
+  padding: .45rem 1.25rem;
+  background-color: #f7f7f9;
+  border-top: 1px solid rgba(0,0,0,.125);
+}
+
+
+.card {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, .125);
+  border-radius: .0rem;
+  box-shadow: 5px 5px 5px #888888;
+}
+/*.navbar-light{*/
+  /*height: 64px;*/
+  /*width: 100%;*/
+  /*background-color: #0c84e4;*/
+  /*vertical-align: middle;*/
+  /*box-shadow: 2px;*/
+  /*padding-left: 15px;*/
+  /*box-shadow: 0px 0px 2px 2px #666;*/
+/*}*/
+
+/* Top bar */
+.bg-inverse {
+  background-color: #0c84e4 !important;
+}
+.amexio-sidenavbar-nav-link-a:hover{
+  color: #0c84e4 !important;
+}
+
+
+.a-link:hover{
+  color: #0c84e4 !important;
+}
+
+/*Profile*/
+
+/*Profile */
+.img-responsive {
+  max-width: 100%;
+  width: 100%;
+}
+.imagepanel {
+  background-color: cornflowerblue;
+}
+.half {
+  float: left;
+  overflow: hidden;
+}
+.first-35 {
+  padding: 0px 10px 10px 0px;
+  width: 35%;
+}
+/*panel action*/
+.actionpanel {
+  padding: 12px 16px 12px 16px;
+  height: 48px;
+}
+.actionpanel .iconbuttons {
+  float: left;
+  text-align: left;
+  display: block;
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  text-align: center;
+  padding: 4px;
+}
+.actionpanel .links {
+  float: right;
+  text-align: right;
+  padding-top: 5px
+}
+.actionpanel .links a {
+  font-size: 13px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: rgba(38,166,154,0.87);
+}
+.mainpanel {
+  width: 100%;
+  padding: 19px 16px 19px 16px;
+  overflow: hidden;
+  color: rgba(0,0,0,0.87);
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+}
+.mainpanel .title {
+  font-size: 24px!important;
+  line-height: 28px!important;
+  color: rgba(38,166,154,0.87) !important;
+  margin-bottom: 10px!important;
+  display: block
+}
+.mainpanel .subtitle {
+  color: rgba(0,0,0,0.54) !important;
+  line-height: 18px!important;
+  font-size: 14px!important;
+}
+.mainpanel a {
+  color: rgba(0,0,0,0.87);
+}
+
+.amexio-listbox-list li img {
+  width: 52px;
+  height: 52px;
+  border-radius: 200px;
+  margin-right: 20px;
+  float: left;
+}
+
+/* ----------------------------------- */
+/* COMPONENT - CONTACT LIST - MINI */
+/* ----------------------------------- */
+
+.contact-list-mini .title {
+  float: left;
+  font-size: 13px;
+  color: rgba(0,0,0,0.87);
+  padding-top: 8px;
+  font-weight: 500;
+}
+
+/*Treeview items*/
+.amexio-treeview-ul{
+  padding-left: 30px!important;
+}
+
+.amexio-tree-view-label{
+  text-decoration: none !important;
+  color: rgba(0,0,0,0.87) !important;
+  display: table-cell!important;
+  vertical-align: middle!important;
+  padding: 0px 0px 5px 5px;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+/*pagination*/
+pagination-outer {
+  width: 100%;
+  text-align: right;
+  margin-top: 5px!important;
+  float: right!important;
+}
+.pagination {
+  color: #rgba(0, 0, 0, 0.54);
+  float: right!important;
+}
+.pagination span{
+  margin-right: 20px;
+  display: inline-block;
+  color: rgba(0,0,0,0.54);
+  float: left
+}

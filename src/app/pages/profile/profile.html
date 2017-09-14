@@ -1,0 +1,52 @@
+
+<div class="row">
+  <div class="col-lg-4 col-sm-12 col-xs-12">
+    <amexio-card-pane [enableHeader]="false"  [enableFooter]="false">
+      <amexio-pane-body>
+        <div class="mainpanel"> <span class="title">Mark Anthony</span><span class="subtitle">Co-Founder / Chief Technology Officer</span> </div>
+        <div class="imagepanel">
+          <div class="row">
+            <img src="assets/images/profile/mark.jpg" class="img-responsive">
+          </div>
+        </div>
+        <div class="mainpanel"> <a href="">mark.anthony@metamagic.in</a><br>
+          Working since 6 months ago<br>
+          <a href="">www.metamagicglobal.com</a><br>
+        </div>
+        <div class="actionpanel">
+          <div class="iconbuttons" *ngFor="let iconObj of iconArray">
+            <i [attr.class]="iconObj.iconClass">{{iconObj.iconName}}</i></div>
+          <div class="links"><a href="">Follow</a></div>
+          <div class="clearfix"></div>
+        </div>
+      </amexio-pane-body>
+    </amexio-card-pane>
+
+  </div>
+  <div class="col-lg-8 col-sm-12 col-xs-12">
+    <amexio-card-pane [enableFooter]="false" [cClass]="'contactlist'">
+      <amexio-pane-header>
+        Contacts
+      </amexio-pane-header>
+      <amexio-pane-body>
+        <amexio-listbox [data]="bindData" [filter]="true"
+                        [enableCheckbox] = "false" [dataReader]="'response.data'"
+                        [displayField]="'name'">
+          <ng-template #amexioBodyTmpl let-row="row">
+            <div class="row" style="float: left">
+              <div class="col-lg-3 col-sm-6 col-xs-12 ">
+                <img class="rounded-circle" src="assets/images/profile/{{row.profile}}"/>
+              </div>
+              <div class="col-lg-9 col-sm-12 col-xs-12">
+                <div class="title">{{row.name}}<br><a href="#">xyz@metamagicglobal.com</a></div>
+              </div>
+            </div>
+          </ng-template>
+        </amexio-listbox>
+
+
+      </amexio-pane-body>
+    </amexio-card-pane>
+  </div>
+</div>
+<br/>
