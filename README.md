@@ -15,10 +15,10 @@ npm install -g @angular/cli
 ## Getting Started
 1) Git Clone this Project in a folder 
 ```bash
-git clone https://github.com/meta-magic/amexio-demoapp.git
+git clone https://github.com/meta-magic/amexio-theme.git
 ```
 
-2) cd into the folder `amexio-demoapp`
+2) cd into the folder `amexio-theme`
 3) Run the following command
 ```bash
 npm install
