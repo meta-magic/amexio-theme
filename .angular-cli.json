@@ -1,7 +1,7 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "project": {
-    "name": "amexio-demo-app-theme"
+    "name": "amexio-demo-app"
   },
   "apps": [
     {
@@ -22,15 +22,12 @@
         "../node_modules/bootstrap/dist/css/bootstrap.min.css",
         "../node_modules/bootstrap/dist/css/bootstrap-grid.min.css",
         "../node_modules/bootstrap/dist/css/bootstrap-reboot.css",
-        "../node_modules/font-awesome/css/font-awesome.css",
-        "../src/assets/css/messenger.css",
-        "../src/assets/css/messenger-theme-air.css"
+        "../node_modules/font-awesome/css/font-awesome.css"
       ],
       "scripts": [
         "../node_modules/jquery/dist/jquery.min.js",
         "../node_modules/tether/dist/js/tether.min.js",
-        "../node_modules/bootstrap/dist/js/bootstrap.min.js",
-        "../src/assets/js/messenger.min.js"
+        "../node_modules/bootstrap/dist/js/bootstrap.min.js"
       ],
       "addons": [
         "../node_modules/font-awesome/fonts/*.+(otf|eot|svg|ttf|woff|woff2)"

@@ -10,12 +10,24 @@ const CSS_LOCATION : string = 'assets/themes/';
  selector: 'landing-page',
  templateUrl:'landingpage.html',
   styles : [
-    `
-      .landing-page{
-        background: center no-repeat transparent;
-        background-image: url("./../assets/Nighthawk.jpg");
-        height: 100vh;
-        color: #cccccc;
+    `      
+      /*Landing page navbar color*/
+      .landing-page-navbar .bg-inverse{
+        background-color: #292b2c!important;
+      }
+
+      /*LANDING PAGE IMAGE*/
+      .theme-image{
+        border: 1px solid rgba(0, 0, 0, .125);
+        border-radius: .0rem;
+        box-shadow: 5px 5px 5px #888888;
+
+      }
+      .theme-image:hover{
+        transform: scale(1.1);
+        box-shadow: 2px 2px 2px #000000;
+        z-index: 1;
+        transition: all 200ms ease-in;
       }
     `
   ]
