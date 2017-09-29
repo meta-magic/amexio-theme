@@ -1,4 +1,4 @@
-# Demo App Built Using [Amexio v2.0 (Bootstrap 4)](https://www.amexio.tech/)
+# Demo App Built Using [Amexio v3.0 (Bootstrap 4)](https://www.amexio.tech/)
 
 ## Prerequisite
 Node, Npm & Angular CLI
@@ -34,5 +34,4 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Further help (Angular CLI)
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
-# amexio-demoapp
 # amexio-theme
