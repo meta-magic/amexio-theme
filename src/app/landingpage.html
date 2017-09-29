@@ -1,92 +1,188 @@
-<nav class="navbar fixed-top navbar-toggleable-sm navbar-inverse bg-inverse">
-  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar"
-          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <a class="navbar-brand" href="#" >
-    <div class="d-flex justify-content-center">
-      <img src="assets/images/logos/amexio-logo.png" width="35" height="35" alt=""> Amexio Demo App
+<div class="landing-page-navbar">
+  <nav class="navbar fixed-top navbar-toggleable-sm navbar-inverse bg-inverse">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="#">
+      <div class="d-flex justify-content-center">
+        <img src="assets/images/logos/amexio-logo.png" width="35" height="35" alt=""> Amexio Demo App
+      </div>
+    </a>
+    <div class="collapse navbar-collapse justify-content-between" id="navbar">
+      <div class="navbar-nav">
+      </div>
+      <div class="navbar-nav">
+        <a class="nav-item nav-link " routerLink="#">Home</a>
+        <a class="nav-item nav-link " [attr.href]="'https://www.amexio.tech/features'"
+           [target]="'_blank'">Features</a>
+        <a class="nav-item nav-link " [attr.href]="'http://www.amexio.org/showcaseapp/v2/index.html#/home'"
+           [target]="'_blank'">API</a>
+        <a class="nav-item nav-link " [attr.href]="'https://amexio.tech/download'"
+           [target]="'_blank'">Download</a>
+        <a class="nav-item nav-link " [attr.href]="'https://github.com/meta-magic/amexio-demoapp-theme.git'"
+           [target]="'_blank'"
+        >Git</a>
+      </div>
     </div>
-  </a>
-  <div class="collapse navbar-collapse justify-content-between" id="navbar">
-    <div class="navbar-nav">
-    </div>
-    <div class="navbar-nav">
-      <a class="nav-item nav-link " routerLink="#" >Home</a>
-      <a class="nav-item nav-link " [attr.href]="'https://www.amexio.tech/features'"
-         [target]="'_blank'">Features</a>
-      <a class="nav-item nav-link " routerLink="/home/dashboard" >Demo</a>
-      <a class="nav-item nav-link " [attr.href]="'http://www.amexio.org/showcaseapp/v2/index.html#/home'"
-         [target]="'_blank'">API</a>
-      <a class="nav-item nav-link " [attr.href]="'https://amexio.tech/download'"
-         [target]="'_blank'">Download</a>
-      <a class="nav-item nav-link " [attr.href]="'https://github.com/meta-magic/amexio-demoapp.git'"
-         [target]="'_blank'"
-      >Git</a>
-      <li class="nav-item" style="cursor: pointer">
-        <a style="color: white" class="nav-link" id="themeToggler" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <span style="font-size: 20px;color: whitesmoke">&#x2630;</span>
-        </a>
-        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="themeToggler" style="overflow-y: auto">
-          <ng-container *ngFor="let theme of availableThemes">
-            <a class="dropdown-item" [attr.id]="theme.name"  >{{theme.displayName}}</a>
-               <ul>
-                 <div style="padding-left: 25px">
-                   <li *ngFor="let childrenTheme of theme.childrens"  (click)="setTheme(theme)"> {{childrenTheme.displayName}}</li>
-                 </div>
-               </ul>
-          </ng-container>
-        </div>
-      </li>
-    </div>
-  </div>
 
-</nav>
+  </nav>
+</div>
 
 <br><br><br>
 <div class="row">
-  <div class="col-lg-2"></div>
-  <div class="col-lg-8">
-    <amexio-card-pane [enableFooter]="false">
-      <amexio-pane-header>
-       Amexio Demo App Details
-      </amexio-pane-header>
-      <amexio-pane-body>
-        <div>
-          <p>
-          Demo app focuses on the showcase of Amexio UI Components and Features. Here we have created simple app with different pages which is using 60+ different amexio components,13 charts, 2 dashboards and 2 map
-          based on Angular4 and Bootstrap4.
-          </p>
-        </div>
-        <div>
-          <ul>
-            <li>
-              Showcasing live Amexio charts.
-            </li>
-            <li>
-              Email page showing list of emails with datagrid, tree showing all the nested labels required for showing menus
-            </li>
-            <li>
-              Employee Registration showing two different forms in tabs.
-            </li>
-            <li>
-              Issue Status showing stats using progress bar, customer feedback using carousel view.
-            </li>
-            <li>There are two reports which uses datagrid features like filtering and grouping.</li>
-            <li>
-              Demo App <a style="color: blue" [attr.href]="'https://github.com/meta-magic/amexio-demoapp.git'"
-                          [target]="'_blank'"> Git Source Code </a>  is available on GIT public repository.
-            </li>
-          </ul>
-        </div>
-        <div class="d-flex justify-content-center row" >
-          <amexio-btn  [type]="'primary'" [label]="'Let\'s start the demo!'" (onClick)="routeDemo($event)" ></amexio-btn>
-        </div>
-      </amexio-pane-body>
-    </amexio-card-pane>
+  <div class="col-lg-3" style="padding-top: 15px; border-right: 1px solid #dddddd;">
+    <p style="font-size: 24px;color:  rgb(0, 117, 193);font-family: 'Caveat Brush', sans-serif;">Amexio Enterprise Edition (EE) <a href="https://github.com/meta-magic/amexioFlixPoc" target="_blank"><img height="25px" width="25px" src="assets/images/logos/GitHub.png"></a></p>
+    <ul>
+      <li style="font-weight: 600">
+        Media (Released with v3.0)
+      </li>
+      <li>
+        Health
+      </li>
+      <li>
+        E-Commerce
+      </li>
+      <li>
+        Manufacturing
+      </li>
+      <li>
+        Supply Chain
+      </li>
+      <li>
+        Logistics
+      </li>
+    </ul>
+    <p>
+      <b>Amexio Enterprise Edition / Media </b>To demonstrate the Enterprise Edition Capabilities under the Media Section, following advanced components are released in Amexio v3.0
+    </p>
 
   </div>
+  <div class="col-lg-9" style="padding-top: 15px;">
+    <table>
+      <tr>
+        <td>
+          <div class="theme-image">
+            <a target="_blank" href="http://www.amexio.org/tecmflix2/#/app">
+              <img class="img-fluid" style="padding: 0px" src="assets/images/theme/enterprise_edition.jpg" >
+            </a>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+
 </div>
+<div class="row">
+  <div class="col-lg-3" style="border-right: 1px solid #dddddd;">
+    <p style="font-size: 24px;color:  rgb(0, 117, 193);font-family: 'Caveat Brush', sans-serif;">Amexio Standard Edition (SE) <a href="https://github.com/meta-magic/amexio-theme.git"  target="_blank"><img height="25px" width="25px" src="assets/images/logos/GitHub.png"></a></p>
+    <p>Amexio is a rich set of UI Components, Charts, Dashboards, Maps. Check out the Amexio UI Library Demo and API documentation.</p>
+    <p><b>Standard Edition (SE) Features</b></p>
+    <ul>
+      <li>Responsive Design</li>
+      <li>TypeScript</li>
+      <li>Amexio Ui Components</li>
+      <li>Amexio Charts</li>
+      <li>Amexio Maps</li>
+      <li>Amexio Dashboards</li>
+      <li>Amexio Maps</li>
+    </ul>
+  </div>
+  <div class="col-lg-9" style="padding-left: 10px;padding-right: 20px" >
+    <div class="row" style="justify-content: center"><p style="font-size: 24px;color:  rgb(0, 117, 193);"><br>Material Design Themes For Amexio Applications</p></div>
+    <div class="row">
+      <div class="col-lg-4" style="padding: 20px;">
+        <table>
+          <tr>
+            <td>
+              <div class="theme-image">
+                <a (click)="onThemeClick('MAT-bluegrey')">
+                  <img class="img-fluid" style="padding: 10px" src="assets/images/theme/blue-grey.jpg">
+                </a>
+              </div>
+            </td>
+          </tr>
+        </table>
 
+      </div>
+      <div class="col-lg-4" style="padding: 20px">
+        <table>
+          <tr>
+            <td>
+              <div class="theme-image">
+                <a (click)="onThemeClick('MAT-amber')">
+                  <img class="img-fluid" style="padding: 10px" src="assets/images/theme/mat-amber.png">
+                </a>
+              </div>
+            </td>
+          </tr>
 
+        </table>
+
+      </div>
+      <div class="col-lg-4" style="padding: 20px">
+        <table>
+          <tr>
+            <td>
+              <div class="theme-image">
+                <a (click)="onThemeClick('MAT-brown')">
+                  <img class="img-fluid" style="padding: 10px" src="assets/images/theme/brown.jpg">
+                </a>
+              </div>
+            </td>
+          </tr>
+        </table>
+
+      </div>
+      <div class="col-lg-4" style="padding: 20px">
+        <table>
+          <tr>
+            <td>
+              <div class="theme-image">
+                <a (click)="onThemeClick('MAT-indigo')">
+                  <img class="img-fluid" style="padding: 10px" src="assets/images/theme/indigo.jpg">
+                </a>
+              </div>
+            </td>
+          </tr>
+        </table>
+
+      </div>
+      <div class="col-lg-4" style="padding: 20px">
+        <table>
+          <tr>
+            <td>
+              <div class="theme-image">
+                <a (click)="onThemeClick('MAT-light-blue')">
+                  <img class="img-fluid" style="padding: 10px" src="assets/images/theme/blue.jpg">
+                </a>
+              </div>
+            </td>
+          </tr>
+        </table>
+
+      </div>
+    </div>
+    <div class="row" style="justify-content: center"><p style="font-size: 24px;color:  rgb(0, 117, 193);"><br>Bootstrap Themes For Amexio Applications</p>
+    </div>
+    <div class="row">
+      <div class="col-lg-4" style="padding: 20px">
+        <table>
+          <tr>
+            <td>
+              <div class="theme-image">
+                <a (click)="onThemeClick('BTS-Orange')">
+                  <img class="img-fluid" style="padding: 10px" src="assets/images/theme/mat-amber.png">
+                </a>
+              </div>
+            </td>
+          </tr>
+
+        </table>
+
+      </div>
+    </div>
+  </div>
+
+</div>
 

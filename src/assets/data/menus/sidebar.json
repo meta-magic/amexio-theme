@@ -38,7 +38,7 @@
         "routerLink":"/home/login"
       },
       {
-        "text": "Register Employee",
+        "text": "Register",
         "icon" : "fa fa-address-book-o fa-fw",
         "mdbIcon":"perm_contact_calendar",
         "routerLink":"/home/employee-registration"

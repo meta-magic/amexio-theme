@@ -57,3 +57,21 @@
 .a-link:hover{
   color: #0c84e4 !important;
 }
+
+/*LANDING PAGE IMAGE*/
+.theme-image{
+
+}
+.theme-image:hover{
+  transform: scale(1.1);
+  box-shadow: 0px 0px 10px #000000;
+  z-index: 2;
+  transition: all 200ms ease-in;
+}
+.ee-bullet-point{
+  padding-left: 50px;
+}
+.ee-bullet-point ul li{
+  font-size: medium;
+  font-weight: 400;
+}

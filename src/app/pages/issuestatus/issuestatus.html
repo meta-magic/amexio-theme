@@ -96,7 +96,7 @@
   <br>
   <div class="row">
     <div class="col-lg-6">
-      <amexio-card-pane [showCard]="true">
+      <amexio-card-pane [showCard]="true" [enableFooter]="false">
         <amexio-pane-header>
           Open Issue
         </amexio-pane-header>
@@ -105,25 +105,18 @@
                            [dataReader]="'response.data'"
                            [displayField]="'issueName'"
                            [valueField]="'checked'"
-                           [checkBoxGroupBindData]="openIssuedata">
+                           [checkBoxGroupDownBindData]="openIssuedata" >
           </amexio-checkbox>
+          <div style="display: inline-flex; float:right; ">
+            <amexio-text-input name="issuename"
+                               [placeholder]="'Issue name'" [hasLabel]="false">
+
+            </amexio-text-input>
+            <amexio-btn [label]="'Add'" [type]="'warning'"></amexio-btn>
+
+          </div>
         </amexio-pane-body>
-        <amexio-pane-action>
 
-          <table>
-            <tr>
-              <td valign="top">
-                <amexio-text-input name="issuename"
-                                   [placeholder]="'Issue name'" [hasLabel]="false">
-                </amexio-text-input>
-              </td>
-              <td valign="top" style="padding-left: 15px;">
-                <amexio-btn [label]="'Add'" [type]="'warning'"></amexio-btn>
-              </td>
-            </tr>
-
-          </table>
-        </amexio-pane-action>
       </amexio-card-pane>
     </div>
     <div class="col-lg-6">

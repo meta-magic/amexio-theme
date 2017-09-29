@@ -24,34 +24,9 @@ const CSS_LOCATION : string = 'assets/themes/';
 
 export class LandingPageComponent implements OnInit {
   httpResponse : any;
-
   menuData : any[] = [];
-  availableThemes:any[];
  constructor( private _router : Router ,public _http : Http,private themeService:ThemeService) {
-   this.availableThemes = [
-     {
-       'displayName':'Default Theme',
-       'name' : 'Default',
-       'fileName' : "styles",
-       'category' : 'free',
-       "childrens":[{
-         'displayName':'Blue',
-         'name' : 'Default',
-         'fileName' : 'styles'
-       }]
-     },
-     {
-       'displayName':'Material Design Theme',
-       'name' : 'MDB',
-       'fileName' : 'styles-bluegrey',
-       'category' : 'free',
-       "childrens":[{
-         'displayName':'Bluegrey',
-         'name' : 'MDB',
-         'fileName' : 'styles-bluegrey'
-       }]
-     }
-   ]
+
    this._http.get('assets/data/menus/hometopmenu.json').subscribe(
      response=>{
        this.httpResponse = response.json()
@@ -64,8 +39,47 @@ export class LandingPageComponent implements OnInit {
      }
    );
  }
-  routeDemo(event:any){
-    this._router.navigate(['/home/dashboard']);
+  onThemeClick(themeName:any){
+    let themeNameJSON:any;
+   if(themeName=='MAT-bluegrey'){
+     themeNameJSON={
+       'name' : 'MDB',
+       'fileName' : 'MAT-bluegrey'
+     }
+   }else if(themeName=='MAT-amber'){
+     themeNameJSON={
+       'name' : 'MDB',
+       'fileName' : 'MAT-amber'
+     }
+   }else if(themeName=='MAT-brown'){
+     themeNameJSON={
+       'name' : 'MDB',
+       'fileName' : 'MAT-brown'
+     }
+   }else if(themeName=='MAT-indigo'){
+     themeNameJSON={
+       'name' : 'MDB',
+       'fileName' : 'MAT-indigo'
+     }
+   }else if(themeName=='MAT-light-blue'){
+     themeNameJSON={
+       'name' : 'MDB',
+       'fileName' : 'MAT-light-blue'
+     }
+   }else if(themeName=='Default'){
+     themeNameJSON={
+       'name' : 'Default',
+       'fileName' : 'styles'
+     }
+   }else if(themeName=='BTS-Orange'){
+     themeNameJSON={
+       'name' : 'MDB',
+       'fileName' : 'BTS-Orange'
+     }
+   }
+   if(themeNameJSON){
+     this.setTheme(themeNameJSON);
+   }
   }
   //set theme which user has selected
   setTheme(themeName : any){
@@ -73,9 +87,11 @@ export class LandingPageComponent implements OnInit {
     this.themeService.setThemeName(themeName.name);
     let currentTheme = document.head.querySelectorAll(`link[rel="stylesheet"]`);
     this.removeExistingTheme(currentTheme);
-    if(themeName.fileName!=null)
+    if(themeName.fileName!=null){
       this.createAndApplyNewTheme(themeName);
       this._router.navigate(['/home/dashboard']);
+    }
+
   }
 
   //removed old theme css

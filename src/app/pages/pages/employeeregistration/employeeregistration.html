@@ -36,11 +36,12 @@
                 <amexio-date-time-picker
                   [fieldLabel]="'Date of Birth'"
                   [timepicker]="false"
-                  [datepicker]="datepickerOpts"
+                  [datepicker]="true"
                   [(ngModel)]="currentDate">
                 </amexio-date-time-picker>
               </div>
               <div class="col-lg-6">
+                <br>
                 <amexio-text-input [fieldLabel]="'Phone'" name="phone"
                                    [placeholder]="'Enter phone number'"
                                    [enablePopOver]="true"

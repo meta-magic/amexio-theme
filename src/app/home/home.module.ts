@@ -10,6 +10,7 @@ import {TopNavBarComponent} from "../layout/topnavbar.component";
 import {AmexioWidgetModule} from "amexio-ng-extensions";
 
 const routes: Routes = [
+
   { path: '', redirectTo: 'home', pathMatch: 'full'},
   { path: '', component:HomeComponent,
     children: [

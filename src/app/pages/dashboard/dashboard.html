@@ -1,56 +1,56 @@
   <div class="row">
-    <div class="col-lg-4 col-sm-12">
-      <amexio-datapoints [west]="true" [center]="true" [east]="true" [south]="true" [backgroundColor]="'#efa64c'" [fontColor]="'#ffffff'">
-        <amexio-west [contentalign]="'center'" [width]="'100px'">
+    <div class="col-lg-4 col-sm-12" >
+      <amexio-datapoints [west]="true" [center]="true" [east]="true" [south]="true" >
+        <amexio-west [contentalign]="'center'" [width]="'100px'" [cClass]="'datapoint-west'">
           <i class="fa fa-line-chart fa-3x"></i>
         </amexio-west>
         <amexio-center [contentalign]="'right'">
           <amexio-datapoints [north]="true" [center]="true" [south]="true">
-            <amexio-north>
-              <span style="color: #ffffff; font-size: 36px; font-weight: bold; text-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);">200 Million</span>
+            <amexio-north [cClass]="'datapoints-north'">
+              <span >200 Million</span>
             </amexio-north>
-            <amexio-center>
-              <span style="font-size: 20px">Sales Volume</span>
+            <amexio-center [cClass]="'datapoints-center'">
+              <span>Sales Volume</span>
             </amexio-center>
           </amexio-datapoints>
         </amexio-center>
-        <amexio-south [contentalign]="'center'" [backgroundColor]="'#d97c3e'">10% More than last year</amexio-south>
+        <amexio-south [contentalign]="'center'" [cClass]="'datapoint-south'" ><div>10% More than last year</div></amexio-south>
       </amexio-datapoints>
     </div>
     <div class="col-lg-4 col-sm-12">
-      <amexio-datapoints [west]="true" [center]="true" [east]="true" [south]="true" [backgroundColor]="'#68bafc'" [fontColor]="'#ffffff'">
-        <amexio-west [contentalign]="'center'" [width]="'100px'">
+      <amexio-datapoints [west]="true" [center]="true" [east]="true" [south]="true" >
+        <amexio-west [contentalign]="'center'" [width]="'100px'" [cClass]="'datapoint-west'">
           <i class="fa fa-line-chart fa-3x"></i>
         </amexio-west>
         <amexio-center [contentalign]="'right'">
           <amexio-datapoints [north]="true" [center]="true" [south]="true">
-            <amexio-north>
-              <span style="color: #ffffff; font-size: 36px; font-weight: bold; text-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);">$10 Million</span>
+            <amexio-north [cClass]="'datapoints-north'">
+              <span >$10 Million</span>
             </amexio-north>
-            <amexio-center>
-              <span style="font-size: 20px">Sales Revenue</span>
+            <amexio-center [cClass]="'datapoints-center'">
+              <span >Sales Revenue</span>
             </amexio-center>
           </amexio-datapoints>
         </amexio-center>
-        <amexio-south [contentalign]="'center'" [backgroundColor]="'#3192e1'">5% more than last year</amexio-south>
+        <amexio-south [contentalign]="'center'" [cClass]="'datapoint-south'"><div >5% More than last year</div></amexio-south>
       </amexio-datapoints>
     </div>
     <div class="col-lg-4 col-sm-12">
-      <amexio-datapoints [west]="true" [center]="true" [east]="true" [south]="true" [backgroundColor]="'#f97bb2'" [fontColor]="'#ffffff'">
-        <amexio-west [contentalign]="'center'" [width]="'100px'">
+      <amexio-datapoints [west]="true" [center]="true" [east]="true" [south]="true"  >
+        <amexio-west [contentalign]="'center'" [width]="'100px'" [cClass]="'datapoint-west'">
           <i class="fa fa-line-chart fa-3x"></i>
         </amexio-west>
         <amexio-center [contentalign]="'right'">
           <amexio-datapoints [north]="true" [center]="true" [south]="true">
-            <amexio-north>
-              <span style="color: #ffffff; font-size: 36px; font-weight: bold; text-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);">$2 Million</span>
+            <amexio-north [cClass]="'datapoints-north'">
+              <span >$2 Million</span>
             </amexio-north>
-            <amexio-center>
-              <span style="font-size: 20px">Profit</span>
+            <amexio-center [cClass]="'datapoints-center'">
+              <span >Profit</span>
             </amexio-center>
           </amexio-datapoints>
         </amexio-center>
-        <amexio-south [contentalign]="'center'" [backgroundColor]="'#e42a7b'">10% more than last year</amexio-south>
+        <amexio-south [contentalign]="'center'" [cClass]="'datapoint-south'"><div>10% More than last year</div></amexio-south>
       </amexio-datapoints>
     </div>
   </div>

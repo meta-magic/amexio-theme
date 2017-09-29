@@ -8,6 +8,8 @@ import {FormsModule} from "@angular/forms";
 import {DashboardTemplateTeComponent} from "./dashboardtemplate.component";
 import {AmexioWidgetModule} from "amexio-ng-extensions";
 import {AmexioDashboardModule} from "amexio-ng-extensions/dashboard";
+import {AmexioChartModule} from "amexio-ng-extensions/charts";
+import {AmexioMapsModule} from "amexio-ng-extensions/maps";
 
 const routes: Routes = [
   { path: '', component: DashboardTemplateTeComponent }
@@ -18,7 +20,9 @@ const routes: Routes = [
     CommonModule,FormsModule,
     RouterModule.forChild(routes),
     AmexioWidgetModule,
-    AmexioDashboardModule
+    AmexioDashboardModule,
+    AmexioChartModule,
+    AmexioMapsModule
   ],
   exports: [RouterModule],
   declarations : [

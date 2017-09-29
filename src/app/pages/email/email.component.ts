@@ -14,6 +14,7 @@ export class EmailComponent implements OnInit {
   isComposeOpen : boolean;
   bindData : any;
   data:any;
+  isVisible:boolean;
   constructor(private themeService:ThemeService) {
     this.isComposeOpen=false;
     this.bindData ={
@@ -54,9 +55,15 @@ export class EmailComponent implements OnInit {
         ]
       }
     };
+    this.isVisible=false;
 
   }
   onRowSelect(event:any){
+    if(event.length>0){
+      this.isVisible=true;
+    }else{
+      this.isVisible=false;
+    }
 
   }
   onRowClick(event:any){
@@ -72,6 +79,7 @@ export class EmailComponent implements OnInit {
           "text": "Inbox",
           "expanded":false,
           "checked": false,
+          "selected":true,
           "icon": "fa fa-inbox"
         },{
           "text": "Sent",
@@ -115,6 +123,7 @@ export class EmailComponent implements OnInit {
           "text": "Inbox",
           "expanded":false,
           "checked": false,
+          "selected":true,
           "materialIcon":"dashboard"
         },{
         "text": "Sent",

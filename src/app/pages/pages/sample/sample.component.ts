@@ -12,15 +12,7 @@ import { Component, OnInit } from '@angular/core';
 
 export class SampleComponent implements OnInit {
 
-  currentDate : Date = new Date(2016, 5, 10);
-  datepickerOpts = {
-    startDate: new Date(2016, 5, 10),
-    autoclose: true,
-    todayBtn: 'linked',
-    todayHighlight: true,
-    assumeNearbyYear: true,
-    format: 'D, d MM yyyy'
-  };
+  currentDate : Date = new Date();
 
   country: string;
 
@@ -35,13 +27,13 @@ export class SampleComponent implements OnInit {
     this.checkboxGroupdata = {
       response:{
         data:[{
-          language:'Angular 2',
+          language:'Learning',
           checked: false
         },{
-          language:'JAVA',
+          language:'Shopping',
           checked: false
         },{
-          language:'C++',
+          language:'Fishing',
           checked: false
         }
         ]}};

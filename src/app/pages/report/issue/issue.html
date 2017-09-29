@@ -1,33 +1,33 @@
 <div class="row">
   <div class="col-lg-3">
-    <amexio-datapoints [west]="true" [center]="true" [east]="true" [south]="true" [backgroundColor]="'#4CAF50'" [fontColor]="'#ffffff'">
-      <amexio-west [contentalign]="'center'">
+    <amexio-datapoints [west]="true" [center]="true" [east]="true" [south]="true"  >
+      <amexio-west [contentalign]="'center'" [cClass]="'datapoint-west'">
         <i class="fa fa-check fa-3x"></i>
       </amexio-west>
       <amexio-center [contentalign]="'right'">
         <amexio-datapoints [north]="true" [center]="true" [south]="true">
-          <amexio-north>
-            <span style="color: #ffffff; font-size: 36px; font-weight: bold; text-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);">8</span>
+          <amexio-north [cClass]="'datapoints-center-issue'">
+            <span >8</span>
           </amexio-north>
-          <amexio-center>
-            <span style="font-size: 20px">Closed</span>
+          <amexio-center [cClass]="'datapoints-center'">
+            <span >Closed</span>
           </amexio-center>
         </amexio-datapoints>
       </amexio-center>
     </amexio-datapoints>
   </div>
   <div class="col-lg-3">
-    <amexio-datapoints [west]="true" [center]="true" [east]="true" [south]="true" [backgroundColor]="'#FF9800'" [fontColor]="'#ffffff'">
-      <amexio-west [contentalign]="'center'">
-        <i class="fa fa-envelope-open-o fa-3x"></i>
+    <amexio-datapoints [west]="true" [center]="true" [east]="true" [south]="true"  >
+      <amexio-west [contentalign]="'center'" [cClass]="'datapoint-west'">
+        <i class="fa fa-envelope-open fa-3x"></i>
       </amexio-west>
       <amexio-center [contentalign]="'right'">
         <amexio-datapoints [north]="true" [center]="true" [south]="true">
-          <amexio-north>
-            <span style="color: #ffffff; font-size: 36px; font-weight: bold; text-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);">13</span>
+          <amexio-north [cClass]="'datapoints-center-issue'">
+            <span >13</span>
           </amexio-north>
-          <amexio-center>
-            <span style="font-size: 20px">Open</span>
+          <amexio-center [cClass]="'datapoints-center'">
+            <span >Open</span>
           </amexio-center>
         </amexio-datapoints>
       </amexio-center>
@@ -35,17 +35,17 @@
   </div>
 
   <div class="col-lg-2">
-    <amexio-datapoints [west]="true" [center]="true" [east]="true" [south]="true" [backgroundColor]="'#68bafc'" [fontColor]="'#ffffff'">
-      <amexio-west [contentalign]="'center'">
+    <amexio-datapoints [west]="true" [center]="true" [east]="true" [south]="true" >
+      <amexio-west [contentalign]="'center'" [cClass]="'datapoint-west'">
         <i class="fa fa-bolt fa-3x"></i>
       </amexio-west>
       <amexio-center [contentalign]="'right'">
         <amexio-datapoints [north]="true" [center]="true" [south]="true">
-          <amexio-north>
-            <span style="color: #ffffff; font-size: 36px; font-weight: bold; text-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);">6</span>
+          <amexio-north [cClass]="'datapoints-center-issue'">
+            <span >6</span>
           </amexio-north>
-          <amexio-center>
-            <span style="font-size: 20px">High</span>
+          <amexio-center [cClass]="'datapoints-center'">
+            <span >High</span>
           </amexio-center>
         </amexio-datapoints>
       </amexio-center>
@@ -53,17 +53,17 @@
   </div>
 
   <div class="col-lg-2">
-    <amexio-datapoints [west]="true" [center]="true" [east]="true" [south]="true" [backgroundColor]="'#607D8B'" [fontColor]="'#ffffff'">
-      <amexio-west [contentalign]="'center'">
+    <amexio-datapoints [west]="true" [center]="true" [east]="true" [south]="true" >
+      <amexio-west [contentalign]="'center'" [cClass]="'datapoint-west'">
         <i class="fa fa-medium fa-3x"></i>
       </amexio-west>
       <amexio-center [contentalign]="'right'">
         <amexio-datapoints [north]="true" [center]="true" [south]="true">
-          <amexio-north>
-            <span style="color: #ffffff; font-size: 36px; font-weight: bold; text-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);">9</span>
+          <amexio-north [cClass]="'datapoints-center-issue'">
+            <span >9</span>
           </amexio-north>
-          <amexio-center>
-            <span style="font-size: 20px">Medium</span>
+          <amexio-center [cClass]="'datapoints-center'">
+            <span >Medium</span>
           </amexio-center>
         </amexio-datapoints>
       </amexio-center>
@@ -71,17 +71,17 @@
   </div>
 
   <div class="col-lg-2">
-    <amexio-datapoints [west]="true" [center]="true" [east]="true" [south]="true" [backgroundColor]="'#00BCD4'" [fontColor]="'#ffffff'">
-      <amexio-west [contentalign]="'center'">
+    <amexio-datapoints [west]="true" [center]="true" [east]="true" [south]="true" >
+      <amexio-west [contentalign]="'center'" [cClass]="'datapoint-west'">
         <i class="fa fa-low-vision fa-3x"></i>
       </amexio-west>
       <amexio-center [contentalign]="'right'">
         <amexio-datapoints [north]="true" [center]="true" [south]="true">
-          <amexio-north>
-            <span style="color: #ffffff; font-size: 36px; font-weight: bold; text-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);">6</span>
+          <amexio-north [cClass]="'datapoints-center-issue'">
+            <span >6</span>
           </amexio-north>
-          <amexio-center>
-            <span style="font-size: 20px">Low</span>
+          <amexio-center [cClass]="'datapoints-center'">
+            <span >Low</span>
           </amexio-center>
         </amexio-datapoints>
       </amexio-center>
@@ -91,22 +91,21 @@
 </div>
 <br/>
 <div class="row">
-  <amexio-card-pane [enableHeader]="false" [enableFooter]="false">
-    <amexio-pane-body>
-      <amexio-data-table
-        [title]="'Issue'"
-        [pageSize] = "10"
-        [dataReader]="'response.data'"
-        [checkboxSelect]="false"
-        [httpUrl]="'assets/data/issue.json'"
-        [httpMethod]="'get'"
-        (selectedRowData)="onRowSelect($event)"
-        (rowSelect)="onRowClick($event)" [cClass]="'gridStyle'" [tableDatacClass]="'datagridrow'" [tableTitlecClass]="'headerStyle'" [tableHeadercClass]="'headerStyleColumn'">
-        <amexio-data-table-column [dataIndex]="'date'" [dataType]="'string'" [hidden]="false" [text]="'Date'"></amexio-data-table-column>
-        <amexio-data-table-column [dataIndex]="'status'" [dataType]="'string'" [hidden]="false" [text]="'Status'"></amexio-data-table-column>
-        <amexio-data-table-column [dataIndex]="'issue'" [dataType]="'string'" [hidden]="false" [text]="'Issue'"></amexio-data-table-column>
-        <amexio-data-table-column [dataIndex]="'severity'" [dataType]="'string'" [hidden]="false" [text]="'Severity'"></amexio-data-table-column>
-      </amexio-data-table>
-    </amexio-pane-body>
-  </amexio-card-pane>
+  <div class="col-lg-12">
+    <amexio-data-table
+      [title]="'Issue'"
+      [pageSize] = "10"
+      [dataReader]="'response.data'"
+      [checkboxSelect]="false"
+      [httpUrl]="'assets/data/issue.json'"
+      [httpMethod]="'get'"
+      (selectedRowData)="onRowSelect($event)"
+      (rowSelect)="onRowClick($event)" [cClass]="'gridStyle'" [tableDatacClass]="'datagridrow'" [tableTitlecClass]="'headerStyle'" [tableHeadercClass]="'headerStyleColumn'">
+      <amexio-data-table-column [dataIndex]="'date'" [dataType]="'string'" [hidden]="false" [text]="'Date'"></amexio-data-table-column>
+      <amexio-data-table-column [dataIndex]="'status'" [dataType]="'string'" [hidden]="false" [text]="'Status'"></amexio-data-table-column>
+      <amexio-data-table-column [dataIndex]="'issue'" [dataType]="'string'" [hidden]="false" [text]="'Issue'"></amexio-data-table-column>
+      <amexio-data-table-column [dataIndex]="'severity'" [dataType]="'string'" [hidden]="false" [text]="'Severity'"></amexio-data-table-column>
+    </amexio-data-table>
+
+  </div>
 </div>

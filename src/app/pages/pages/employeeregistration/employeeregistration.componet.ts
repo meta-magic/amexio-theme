@@ -15,14 +15,7 @@ export class EmployeeRegistrationComponent implements OnInit {
   cityName:string;
   currentDate : Date = new Date();
   time : Date = new Date();
-  datepickerOpts = {
-    startDate: new Date(),
-    autoclose: true,
-    todayBtn: 'linked',
-    todayHighlight: true,
-    assumeNearbyYear: true,
-    format: 'D, d MM yyyy'
-  };
+
   constructor() {
 
   }
