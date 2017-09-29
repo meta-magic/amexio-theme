@@ -7,6 +7,7 @@ import {CommonModule} from "@angular/common";
 import {FormsModule} from "@angular/forms";
 import {IssueComponent} from "./issue.component";
 import {AmexioWidgetModule} from "amexio-ng-extensions";
+import {AmexioDashboardModule} from "amexio-ng-extensions/dashboard";
 
 const routes: Routes = [
   { path: '', component: IssueComponent }
@@ -16,7 +17,8 @@ const routes: Routes = [
   imports: [
     CommonModule,FormsModule,
     RouterModule.forChild(routes),
-    AmexioWidgetModule
+    AmexioWidgetModule,
+    AmexioDashboardModule
   ],
   exports: [RouterModule],
   declarations : [
