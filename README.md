@@ -1,4 +1,4 @@
-# Demo App Built Using [Amexio v2.1.7 (Bootstrap 4)](https://www.amexio.tech/)
+# Demo App Built Using [Amexio v3.0 (Bootstrap 4)](https://www.amexio.tech/)
 
 ## Prerequisite
 Node, Npm & Angular CLI
