@@ -787,6 +787,7 @@ DROPDOWN MENU OPTIONS STYLE
 .dropdown-menu{
   border-radius: 0px;
   background-color: #2F323B!important;
+  color: rgba(255,255,255,0.70)!important;
 }
 
 
