@@ -711,13 +711,11 @@ label {
 
 .amexio-treeview-node-selected div i{
   padding-right: 20px;
-  color: #F5A623!important;
+  color: rgba(255,255,255,0.70)!important;
 }
 
 .amexio-treeview-node:hover{
-
   background-color: #24262D!important;
-
 }
 
 

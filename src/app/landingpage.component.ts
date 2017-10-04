@@ -122,7 +122,7 @@ export class LandingPageComponent implements OnInit {
 
   //apply theme based on use selection
   createAndApplyNewTheme(theme : any){
-
+    debugger;
     if(theme.name==="MDB"){
       //this is for MDB theme
       let linkEl = document.createElement('link');
@@ -154,7 +154,7 @@ export class LandingPageComponent implements OnInit {
       let font1 = document.createElement('link');
       font1.setAttribute('rel', 'stylesheet');
       font1.id='custom_theme';
-      font1.href = "https://fonts.google.com/specimen/Ubuntu+Condensed;";
+      font1.href = "https://fonts.googleapis.com/css?family=Ubuntu+Condensed";
       document.head.appendChild(font1);
     }
 
