@@ -1,10 +1,11 @@
 body{
   margin: 0px;
   padding: 0px;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Ubuntu Condensed', sans-serif;
   font-weight: 400;
   letter-spacing: 0.2px;
-  color: #6F6F6F;
+  color: rgba(255,255,255,0.70)!important;
+  background-color: #2F323B;
 }
 /* ----------------------------------- */
 /* MATERIAL ICONS - CSS */
@@ -28,7 +29,7 @@ body{
 /* START OF NAVBAR COMPONENT */
 /* ----------------------------------- */
 .bg-inverse {
-  background-color: #FFA000 !important;
+  background-color: #F68221 !important;
 }
 /* ----------------------------------- */
 /* START OF CARD COMPONENT */
@@ -36,15 +37,19 @@ body{
 .card{
   border-radius: 0px;
   color: #FFFFFF;
+  background-color: #3A3C42;
+  border: 1px solid #24262D;
 }
 .card .card-header{
-  background-color: #FFC107;
+  background-color: #24262D;
   border-radius: 0px;
   font-size: 20px;
   padding: 20px 24px;
   overflow: auto;
   font-weight: 300;
   text-transform: capitalize;
+  color: #F5A623;
+  border-radius: 0px;
 }
 .card .card-block{
   border-radius: 0px;
@@ -58,7 +63,7 @@ body{
 .card .card-footer{
   border-radius: 0px;
   border: none;
-  background-color: #FFFFFF;
+  background-color: #24262D!important; /*NEW CAHNGES-04-10-2017*/
 
 }
 
@@ -71,25 +76,25 @@ body{
 }
 .amexio-sidenavbar-sidenavleft{
   width: 100%;
-  height: 100%
+  height: 100%;
   overflow:hidden;
   float: left;
-  /* IMPLEMENTED */
-  background-color: #fff;
+
 }
 .amexio-sidenavbar-sidenavleft .navbar-nav{
   width: 100%;
   margin: 0px;
   padding: 0px;
+  background-color: #3A3C42;
 }
 .amexio-sidenavbar-sidenavleft .nav-item{
   list-style: none;
   display: block;
   font-size: 14px !important;
   text-align: left;
-  padding: 13px 0px 13px 17px!important;;
-  font-weight: 500!important;
+  padding: 13px 0px 13px 17px!important;
   width: 100%!important;
+  background-color: #3A3C42;
 }
 .amexio-sidenavbar-sidenavleft  .nav-item:hover {
   background-color: #eee;
@@ -101,7 +106,7 @@ body{
 }
 
 .amexio-sidenavbar-sidenavleft  .amexio-sidenavbar-subheader:last-child{
-  border-bottom: solid 1px  #E0E0E0 !important;
+  border-bottom: solid 1px  #3D404C !important;
 }
 
 .amexio-sidenavbar-sidenavleft  .amexio-sidenavbar-subheader span{
@@ -109,28 +114,28 @@ body{
 }
 
 .amexio-sidenavbar-sidenavleft .amexio-sidenavbar-subheader:hover  {
-  background-color: #ffffff;
+  background-color: #3A3C42; /*NEW CAHNGES-04-10-2017*/
 }
 .amexio-sidenavbar-sidenavleft  .nav-item{
   border-bottom: none!important;
 }
 .amexio-sidenavbar-sidenavleft  .nav-item a{
   text-decoration: none;
-  color: rgba(0,0,0,0.87);
+  color: #F8F1F1;
 }
 .amexio-sidenavbar-sidenavleft  .nav-item i{
   padding-right: 38px;
 }
 .amexio-link-selected{
-  background-color: #eee!important;
+  background-color: #24262D!important;
 }
 
 .amexio-link-selected a{
-  color: #FF5722!important;
+  color: #F5A623!important;
 }
 
 .amexio-link-selected i{
-  color: #FF5722!important;
+  color: #F5A623!important;
 }
 
 .amexio-link-selected:hover {
@@ -166,8 +171,8 @@ body{
 }
 
 .amexio-listbox-list li img{
-  width: 52px;
-  height: 52px;
+  width: 40px;
+  height: 40px;
   border-radius: 200px;
   margin-right: 20px;
   float: left;
@@ -191,44 +196,45 @@ body{
 /* ----------------------------------- */
 
 .headerStyle{
-  background-color: #ffc107;
+  background-color: #24262D;
   color: #FFFFFF;
   font-size: 15px;
   padding: 20px 24px;
   overflow: auto;
   font-weight: 300;
   text-transform: capitalize;
+  color: #F5A623;
 
 }
 
 .gridStyle{
   font-size: 13px;
   line-height: 15px;
-  color: rgba(0,0,0,0.87);
-
+  color: rgba(255,255,255,0.70);
+  background-color: #2F323B;
 }
 
 .headerStyleColumn{
   line-height: 15px;
-  color: rgba(0,0,0,0.87);
+  color: rgba(255,255,255,0.70);
   height:48px;
   border-bottom: 1px solid #E0E0E0;
   font-weight: 500;
   padding: 0px 24px 0px 24px!important;
   text-align: left;
-
 }
 .datagridrow{
   height:48px;
   border-bottom: 1px solid #E0E0E0;
-  background-color: #fff;
+  background-color: #2F323B;
 }
 
 .datagridrow td{
   padding: 0px 24px 0px 24px!important;
+
 }
 .datagridrow:hover{
-  background-color: #eee;
+  background-color: #24262D;
 }
 .groupbyseperator{
   height:48px;
@@ -287,7 +293,7 @@ body{
   transition: all 0.4s ease;
 }
 .amexio-checkbox[type="checkbox"]:checked + label:before {
-  border: 2px solid #FF5722;
+  border: 2px solid #795548;
 }
 .amexio-checkbox[type="checkbox"] + label:after {
   box-sizing: content-box;
@@ -342,7 +348,7 @@ body{
 }
 .amexio-checkbox[type="checkbox"]:checked + label:before {
   animation: borderscale 200ms ease-in;
-  background: #FF5722;
+  background: #795548;
 }
 .amexio-checkbox[type="checkbox"]:checked + label:after {
   transform: rotate(-45deg) scale(1);
@@ -427,7 +433,7 @@ body{
   text-transform: uppercase
 }
 .btn-primary {
-  background-color: #FF5722;
+  background-color: #FFA726;
   border-color: transparent;
   color: #fff;
 }
@@ -436,11 +442,11 @@ body{
   border-color: transparent;
   box-shadow: none;
   border-radius: 0;
-  color: #FF8F00;
+  color: #616161;
   font-weight: 400;
 }
 .btn-link:hover {
-  color: #FF8F00;
+  color: #616161;
   text-decoration: none;
 }
 .btn,.btn-group-sm>.btn, .btn-sm{
@@ -487,7 +493,7 @@ body{
 .mainpanel .title {
   font-size: 24px!important;
   line-height: 28px!important;
-  color: #FF5722;
+  color: #795548;
   margin-bottom: 10px!important;
   display: block
 }
@@ -508,7 +514,7 @@ body{
   margin-top:20px;
 }
 .forgot-password a{
-  color: #FF8F00!important;
+  color: #BCAAA4!important;
 }
 .forgot-password a:hover{
   text-decoration: none;
@@ -652,7 +658,7 @@ label {
   font-size: 13px;
   text-transform: uppercase;
   text-decoration: none;
-  color: #FF5722;
+  color: #0277BD;
 }
 /* ----------------------------------- */
 /* ICON FOR PROFILE ex.CAKE..*/
@@ -708,7 +714,7 @@ label {
 /* CSS for Selected Item in Tree */
 .amexio-treeview-node-selected{
   text-decoration: none !important;
-  color: #FF5722 !important;
+  color: #212121 !important;
   display: table-cell!important;
   vertical-align: middle!important;
   padding: 13px 0px 13px 17px;
@@ -719,7 +725,7 @@ label {
 
 .amexio-treeview-node-selected div i{
   padding-right: 20px;
-  color: #FF5722 !important;
+  color: #212121 !important;
 }
 
 .amexio-treeview-node:hover{
@@ -766,21 +772,16 @@ label {
 /* DATA GRID PAGINATION*/
 /* ----------------------------------- */
 
-pagination-outer {
-  width: 100%;
-  text-align: right;
-  margin-top: 5px!important;
-  float: right!important;
-}
 .pagination {
-  color: #rgba(0, 0, 0, 0.54);
+  color: rgba(255,255,255,0.70)!important;/*NEW CAHNGES-04-10-2017*/
   float: right!important;
 }
 .pagination span{
   margin-right: 20px;
   display: inline-block;
-  color: rgba(0,0,0,0.54);
-  float: left
+  float: left;
+  color: rgba(255,255,255,0.70)!important;/*NEW CAHNGES-04-10-2017*/
+
 }
 
 /* ----------------------------------- */
@@ -800,6 +801,7 @@ DROPDOWN MENU OPTIONS STYLE
 ---------------------*/
 .dropdown-menu{
   border-radius: 0px;
+  background-color: #2F323B!important;
 }
 
 
@@ -885,7 +887,7 @@ DROPDOWN MENU OPTIONS STYLE
 }
 
 .popover-title {
-  background-color: #FFC107;
+  background-color: #455A64;
   color: #FFFFFF;
   font-size: 20px;
   border: none;
@@ -908,7 +910,7 @@ DROPDOWN MENU OPTIONS STYLE
   border-top-left-radius: 0rem;
 }
 
-
+/*NEW CAHNGES-04-10-2017*/
 /*-----------------------
 *** COMPONENT- DATAPOINTS ***
 -------------------------*/
@@ -926,7 +928,7 @@ DROPDOWN MENU OPTIONS STYLE
 
 .datapoint-south{
   background-color: #FFC107;
-  color: #ffffff;
+  color: black;
 }
 
 .datapoint-west{
@@ -936,11 +938,12 @@ DROPDOWN MENU OPTIONS STYLE
 .datapoints-center-issue{
   font-size: 36px; font-weight: bold;
 }
-.ee-bullet-point{
-  padding-left: 50px;
-}
-.ee-bullet-point ul li{
-  font-size: medium;
-  font-weight: 400;
+
+/*For Bootstrap row- Not Editable*/
+.row, .list-group-item ,.amexio-sidenavbar-sidenavleft{
+  background-color: transparent!important;
 }
 
+label{
+  color: rgba(255,255,255,0.70)!important;
+}
