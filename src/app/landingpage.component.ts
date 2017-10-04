@@ -85,7 +85,7 @@ export class LandingPageComponent implements OnInit {
      }
    }else if(themeName=='BTS-Orange'){
      themeNameJSON={
-       'name' : 'MDB',
+       'name' : 'Default',
        'fileName' : 'BTS-Orange'
      }
    }
@@ -150,6 +150,12 @@ export class LandingPageComponent implements OnInit {
       linkEl.id='custom_theme';
       linkEl.href = CSS_LOCATION+'/'+theme.fileName+'.css';
       document.head.appendChild(linkEl);
+
+      let font1 = document.createElement('link');
+      font1.setAttribute('rel', 'stylesheet');
+      font1.id='custom_theme';
+      font1.href = "https://fonts.google.com/specimen/Ubuntu+Condensed;";
+      document.head.appendChild(font1);
     }
 
   }
