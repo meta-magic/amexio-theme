@@ -46,4 +46,13 @@ export class ThemeService {
       return this.cookieService.get('theme_name');
     }
   }
+
+  setThemeCSSFileName(fileName:string){
+    this.cookieService.set('CssFileName',fileName);
+  }
+  getThemeCSSFileName(){
+    if(this.cookieService.get('CssFileName')){
+      return this.cookieService.get('CssFileName');
+    }
+  }
 }

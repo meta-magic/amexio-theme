@@ -63,7 +63,10 @@ export class AppComponent implements OnInit{
       let linkEl = document.createElement('link');
       linkEl.setAttribute('rel', 'stylesheet');
       linkEl.id='custom_theme';
-      linkEl.href = CSS_LOCATION+'styles-bluegrey.css';
+      if(this.themeService.getThemeCSSFileName()){
+        linkEl.href = CSS_LOCATION+this.themeService.getThemeCSSFileName()+'.css';
+      }
+
       document.head.appendChild(linkEl);
 
       //add material +family=Roboto api
@@ -83,7 +86,9 @@ export class AppComponent implements OnInit{
       let linkEl = document.createElement('link');
       linkEl.setAttribute('rel', 'stylesheet');
       linkEl.id='custom_theme';
-      linkEl.href = CSS_LOCATION+'styles.css';
+      if(this.themeService.getThemeCSSFileName()){
+        linkEl.href = CSS_LOCATION+this.themeService.getThemeCSSFileName()+'.css';
+      }
       document.head.appendChild(linkEl);
     }
 
