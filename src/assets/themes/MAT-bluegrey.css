@@ -73,7 +73,7 @@ body{
 
 .amexio-sidenavbar-sidenavleft{
   width: 100%;
-  height: 100%
+  height: 100%;
   overflow:hidden;
   float: left;
   /* IMPLEMENTED */
@@ -774,7 +774,7 @@ pagination-outer {
   float: right!important;
 }
 .pagination {
-  color: #rgba(0, 0, 0, 0.54);
+  color: rgba(0, 0, 0, 0.54);
   float: right!important;
 }
 .pagination span{

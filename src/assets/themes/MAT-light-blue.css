@@ -168,7 +168,7 @@ body{
 
 .amexio-listbox-list li img{
   width: 52px;
-  height: px;
+  height: 52px;
   border-radius: 200px;
   margin-right: 20px;
   float: left;
@@ -775,7 +775,7 @@ pagination-outer {
   float: right!important;
 }
 .pagination {
-  color: #rgba(0, 0, 0, 0.54);
+  color: rgba(0, 0, 0, 0.54);
   float: right!important;
 }
 .pagination span{
