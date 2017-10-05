@@ -27,7 +27,7 @@ body{
 /* ----------------------------------- */
 /* START OF NAVBAR COMPONENT */
 /* ----------------------------------- */
-.bg-inverse {
+.appbar {
   background-color: #795548 !important;
 }
 /* ----------------------------------- */
@@ -918,24 +918,24 @@ DROPDOWN MENU OPTIONS STYLE
   background-color: #EFEBE9;
   color: #795548;
 }
-.datapoints-north{
+.datapoints-title{
   color: #795548; font-size: 36px; font-weight: bold;
 }
 
-.datapoints-center{
+.datapoints-subtitle{
   font-size: 20px;
 }
 
-.datapoint-south{
+.datapoints-footer{
   background-color: #BCAAA4;
   color: #ffffff;
 }
 
-.datapoint-west{
+.datapoints-visual{
   background-color: #EFEBE9;
 }
 
-.datapoints-center-issue{
+.datapoints-subtitle-issue{
   font-size: 36px; font-weight: bold;
 }
 .ee-bullet-point{

@@ -8,7 +8,7 @@ body{
 }
 
 /*Top nav bar*/
-.bg-inverse {
+.appbar {
   background-color: #90A4AE !important;
 }
 
@@ -917,24 +917,24 @@ DROPDOWN MENU OPTIONS STYLE
   background-color: #ECEFF1;
   color: #455A64;
 }
-.datapoints-north{
+.datapoints-title{
   color: #455A64; font-size: 36px; font-weight: bold;
 }
 
-.datapoints-center{
+.datapoints-subtitle{
   font-size: 20px;
 }
 
-.datapoint-south{
+.datapoints-footer{
   background-color: #455A64;
   color: #ffffff;
 }
 
-.datapoint-west{
+.datapoints-visual{
   background-color: #ECEFF1;
 }
 
-.datapoints-center-issue{
+.datapoints-subtitle-issue{
   font-size: 36px; font-weight: bold;
 }
 

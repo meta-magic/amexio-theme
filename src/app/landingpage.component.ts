@@ -11,6 +11,9 @@ const CSS_LOCATION : string = 'assets/themes/';
  templateUrl:'landingpage.html',
   styles : [
     `      
+      body{
+        background-color: white;
+      }
       /*Landing page navbar color*/
       .landing-page-navbar .bg-inverse{
         background-color: #292b2c!important;

@@ -919,7 +919,7 @@ DROPDOWN MENU OPTIONS STYLE
   color: #FFC107; font-size: 36px; font-weight: bold;
 }
 
-.datapoints-center{
+.datapoints-subtitle{
   font-size: 20px;
 }
 
@@ -932,7 +932,7 @@ DROPDOWN MENU OPTIONS STYLE
   background-color: #FFF8E1;
 }
 
-.datapoints-center-issue{
+.datapoints-subtitle-issue{
   font-size: 36px; font-weight: bold;
 }
 
