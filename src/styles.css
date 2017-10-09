@@ -75,20 +75,20 @@ body{
   border-right: 1px solid #ddd;
   background-color: #3A3C42;
 }
-.amexio-sidenavbar-sidenavleft{
+.amexio-sidenav-left{
   width: 100%;
   height: 100%;
   overflow:hidden;
   float: left;
   background-color: #3A3C42!important;
 }
-.amexio-sidenavbar-sidenavleft .navbar-nav{
+.amexio-sidenav-left .navbar-nav{
   width: 100%;
   margin: 0px;
   padding: 0px;
   background-color: #3A3C42;
 }
-.amexio-sidenavbar-sidenavleft .nav-item{
+.amexio-sidenav-left .nav-item{
   list-style: none;
   display: block;
   font-size: 14px !important;
@@ -97,34 +97,34 @@ body{
   width: 100%!important;
 
 }
-.amexio-sidenavbar-sidenavleft  .nav-item:hover {
+.amexio-sidenav-left  .nav-item:hover {
   background-color: #eee;
   cursor: pointer;
 }
-.amexio-sidenavbar-sidenavleft  .amexio-sidenavbar-subheader{
+.amexio-sidenav-left  .amexio-sidenavbar-subheader{
   border-top: solid 1px #E0E0E0 !important;
   /*border-bottom: solid 1px  #E0E0E0 !important;*/
 }
 
-.amexio-sidenavbar-sidenavleft  .amexio-sidenavbar-subheader:last-child{
+.amexio-sidenav-left  .amexio-sidenavbar-subheader:last-child{
   border-bottom: solid 1px  #3D404C !important;
 }
 
-.amexio-sidenavbar-sidenavleft  .amexio-sidenavbar-subheader span{
+.amexio-sidenav-left  .amexio-sidenavbar-subheader span{
   padding-right: 5px;
 }
 
-.amexio-sidenavbar-sidenavleft .amexio-sidenavbar-subheader:hover  {
+.amexio-sidenav-left .amexio-sidenavbar-subheader:hover  {
   background-color: #3A3C42; /*NEW CAHNGES-04-10-2017*/
 }
-.amexio-sidenavbar-sidenavleft  .nav-item{
+.amexio-sidenav-left  .nav-item{
   border-bottom: none!important;
 }
-.amexio-sidenavbar-sidenavleft  .nav-item a{
+.amexio-sidenav-left  .nav-item a{
   text-decoration: none;
   color: #F8F1F1;
 }
-.amexio-sidenavbar-sidenavleft  .nav-item i{
+.amexio-sidenav-left  .nav-item i{
   padding-right: 38px;
 }
 .amexio-link-selected{
@@ -919,7 +919,7 @@ DROPDOWN MENU OPTIONS STYLE
   color: #FFC107; font-size: 36px; font-weight: bold;
 }
 
-.datapoints-subtitle{
+.amexio-datapoints-subtitle{
   font-size: 20px;
 }
 
@@ -932,7 +932,7 @@ DROPDOWN MENU OPTIONS STYLE
   background-color: #FFF8E1;
 }
 
-.datapoints-subtitle-issue{
+.amexio-datapoints-subtitle-issue{
   font-size: 36px; font-weight: bold;
 }
 
