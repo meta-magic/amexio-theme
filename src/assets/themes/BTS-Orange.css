@@ -891,6 +891,6 @@ label{
 }
 
 /*DATE-TIME -COMPONENT*/
-.amexio-datepicker ,.dropdown-item{
+.amexio-datepicker ,.dropdown-item ,.dropdown-menu{
   color: rgba(255,255,255,0.70)!important;
 }
