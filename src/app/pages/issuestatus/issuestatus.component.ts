@@ -5,7 +5,13 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'issue-status',
-  templateUrl: 'issuestatus.html'
+  templateUrl: 'issuestatus.html',
+  styles:[`
+    /*CAROUSEL - DIV HTML*/
+    .amexio-carousel-backgound{
+      background: #f5f5f5;padding: 10px;
+    }
+  `]
 })
 
 export class IssueStatusComponent implements OnInit {

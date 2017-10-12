@@ -1,7 +1,7 @@
 
 <div class="row">
   <div class="col-lg-5 col-sm-12 col-xs-12">
-    <amexio-card-pane [enableHeader]="false"  [enableFooter]="false">
+    <amexio-card-pane [enableHeader]="false">
       <amexio-pane-body>
         <div class="mainpanel"> <span class="title">Araf Karsh</span><span class="subtitle">Co-Founder / Chief Technology Officer</span> </div>
         <div class="imagepanel">
@@ -13,13 +13,14 @@
           Working since 6 months ago<br>
           <a href="">www.metamagicglobal.com</a><br>
         </div>
+      </amexio-pane-body>
+      <amexio-pane-action>
         <div class="actionpanel">
           <div class="iconbuttons" *ngFor="let iconObj of iconArray">
             <i [attr.class]="iconObj.iconClass">{{iconObj.iconName}}</i></div>
           <div class="links"><a href="">Follow</a></div>
-          <div class="clearfix"></div>
         </div>
-      </amexio-pane-body>
+      </amexio-pane-action>
     </amexio-card-pane>
 
   </div>
