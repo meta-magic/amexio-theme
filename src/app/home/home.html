@@ -1,7 +1,7 @@
 <top-nav-bar></top-nav-bar>
 <div class="container-fluid" (window:resize)="onResize($event)" style="padding-right: 0px;">
   <div *ngIf="!isMobile" class="row">
-    <div *ngIf="themeName==='Default'" class="col-lg-2 sidenavbox" >
+    <div *ngIf="themeName==='Default'" class="col-lg-2 leftcolumn" >
       <amexio-sidemenubar
         [width]="'17%'"
         [httpUrl]="'assets/data/menus/sidebar.json'"
@@ -20,7 +20,7 @@
       </amexio-sidemenubar>
     </div>
     <!-- Material Design Theme Code-->
-    <div *ngIf="themeName==='MDB'" class="col-lg-2 sidenavbox">
+    <div *ngIf="themeName==='MDB'" class="col-lg-2 leftcolumn">
       <amexio-sidemenubar
         [width]="'17%'"
         [httpUrl]="'assets/data/menus/sidebar.json'"

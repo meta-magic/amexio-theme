@@ -8,7 +8,7 @@
         <amexio-pane-body>
           <table width="100%">
             <tr>
-              <td width="15%">Open</td>
+              <td width="15%"><label>Open</label></td>
               <td align="left">
                 <amexio-progress-bar [showProgress]="true"
                                      [infinteMode]="false"
@@ -19,7 +19,7 @@
               </td>
             </tr>
             <tr>
-              <td width="15%">Close</td>
+              <td width="15%"><label>Close</label></td>
               <td align="left">
                 <amexio-progress-bar [showProgress]="true"
                                      [infinteMode]="false"
@@ -30,7 +30,7 @@
               </td>
             </tr>
             <tr>
-              <td width="20%">In-Progress</td>
+              <td width="20%"><label>In-Progress</label></td>
               <td align="left">
                 <amexio-progress-bar [showProgress]="true"
                                      [infinteMode]="false"
@@ -53,7 +53,7 @@
 
           <table width="100%">
             <tr>
-              <td width="20px">Low</td>
+              <td width="20px"><label>Low</label></td>
               <td align="left">
                 <amexio-progress-bar [showProgress]="true"
                                      [infinteMode]="false"
@@ -65,7 +65,7 @@
               </td>
             </tr>
             <tr>
-              <td width="20px">High</td>
+              <td width="20px"><label>High</label></td>
               <td align="left">
                 <amexio-progress-bar [showProgress]="true"
                                      [infinteMode]="false"
@@ -77,7 +77,7 @@
               </td>
             </tr>
             <tr>
-              <td width="20px">Medium</td>
+              <td width="20px"><label>Medium</label></td>
               <td align="left">
                 <amexio-progress-bar [showProgress]="true"
                                      [infinteMode]="false"
@@ -105,15 +105,15 @@
                            [dataReader]="'response.data'"
                            [displayField]="'issueName'"
                            [valueField]="'checked'"
-                           [checkBoxGroupBindData]="openIssuedata" >
+                           [checkBoxGroupBindData]="openIssuedata">
           </amexio-checkbox>
           <div style="display: inline-flex; float:right; ">
             <amexio-text-input name="issuename"
                                [placeholder]="'Issue name'" [hasLabel]="false">
 
             </amexio-text-input>
-            <amexio-btn [label]="'Add'" [type]="'warning'"></amexio-btn>
-
+            <span style="padding: 12px 0px 0px 10px"><amexio-btn [label]="'Add'" [type]="'warning'"></amexio-btn>
+            </span>
           </div>
         </amexio-pane-body>
 
@@ -125,7 +125,7 @@
           Customer Feedback
         </amexio-pane-header>
         <amexio-pane-body>
-          <div style="background: #f5f5f5;padding: 10px;">
+          <div class="amexio-carousel-backgound">
             <amexio-carousel [isContent]="true"
                              [dataReader]="'data'"
                              [httpMethod]="'get'"

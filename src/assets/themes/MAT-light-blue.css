@@ -66,7 +66,7 @@ body{
 /* ----------------------------------- */
 /* COMPONENT - NAVIGATION */
 /* ----------------------------------- */
-.sidenavbox{
+.leftcolumn{
   min-height: 1000px;
   border-right: 1px solid #ddd;
 }
@@ -202,7 +202,10 @@ body{
   color: #0277BD;
 
 }
-
+.headerStyle .form-group {
+  margin:0px!important;
+  height: 0px!important;
+}
 .gridStyle{
   font-size: 13px;
   line-height: 15px;
