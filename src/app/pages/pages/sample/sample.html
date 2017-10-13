@@ -8,6 +8,7 @@
         <amexio-text-input [fieldLabel]="'Name'" name="name"
                            [placeholder]="'Enter name'"
                            [enablePopOver]="true"
+                           [iconFeedBack]="true"
                            [allowBlank]="false" [errorMsg]="'Please enter name'"
                            [minLength]="3" [maxLength]="15" [minErrorMsg]="'Name should be minimum 3 characters'"
                            [maxErrorMsg]="'Name should be less than 15 characters'"
@@ -18,6 +19,7 @@
         <amexio-text-input [fieldLabel]="'Surname'" name="name"
                            [placeholder]="'Enter surname'"
                            [enablePopOver]="true"
+                           [iconFeedBack]="true"
                            [allowBlank]="false" [errorMsg]="'Please enter Surname'"
                            [minLength]="3" [maxLength]="15" [minErrorMsg]="'Surname should be minimum 3 characters'"
                            [maxErrorMsg]="'Surname should be less than 15 characters'"
@@ -28,6 +30,7 @@
         <amexio-textarea-input [fieldLabel]="'Address'" name="Address"
                                [placeholder]="'Enter address'"
                                [errorMsg]="'Please enter address'"
+                               [iconFeedBack]="true"
                                [noOfrows]="'1'" [noOfCols]="'2'"
                                [allowBlank]="false" [enablePopOver]="true"
                                [minLength]="5" [minErrorMsg]="'Address should be minimum 5 characters'"
@@ -84,6 +87,7 @@
         <amexio-email-input [fieldLabel]="'Email'" name="email"
                             [placeholder]="'Enter mail id'"
                             [enablePopOver]="true"
+                            [iconFeedBack]="true"
                             [allowBlank]="false" [errorMsg]="'Please enter correct mail id'">
         </amexio-email-input>
       </div>
