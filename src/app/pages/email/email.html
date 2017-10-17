@@ -54,7 +54,7 @@
                 [httpMethod]="'get'"
                 [filtering]="false"
                 (selectedRowData)="onRowSelect($event)"
-                (rowSelect)="onRowClick($event)" [cClass]="'gridStyle'" [tableDatacClass]="'datagridrow'" [tableTitlecClass]="'headerStyle'" [tableHeadercClass]="'headerStyleColumn'">
+                (rowSelect)="onRowClick($event)" [cClass]="'gridStyle'" [tableDatacClass]="'amexio-grid-record'" [tableTitlecClass]="'amexio-grid-header'" [tableHeadercClass]="'amexio-grid-recordheader'">
                 <amexio-data-table-column [dataIndex]="'date'" [dataType]="'string'" [hidden]="false" [text]="'Date'"></amexio-data-table-column>
                 <amexio-data-table-column [dataIndex]="'from'" [dataType]="'string'" [hidden]="false" [text]="'From'"></amexio-data-table-column>
                 <amexio-data-table-column [dataIndex]="'title'" [dataType]="'string'" [hidden]="false" [text]="'Subject'"></amexio-data-table-column>

@@ -224,17 +224,17 @@ body{
   padding: 0px 24px 0px 24px!important;
   text-align: left;
 }
-.datagridrow{
+.amexio-grid-record{
   height:48px;
   border-bottom: 1px solid #E0E0E0;
   background-color: #2F323B;
 }
 
-.datagridrow td{
+.amexio-grid-record td{
   padding: 0px 24px 0px 24px!important;
 
 }
-.datagridrow:hover{
+.amexio-grid-record:hover{
   background-color: #24262D;
 }
 .groupbyseperator{
@@ -783,7 +783,7 @@ label {
 /* ----------------------------------- */
 /* DATA GRID CHECKBOX */
 /* ----------------------------------- */
-.amexio-datatable-checkbox{
+.amexio-grid-checkbox{
   padding-left: 25px!important;
   width: 50px!important;
 }
