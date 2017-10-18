@@ -4,12 +4,14 @@
 body{
   /* Background */
   background-color: #1b1d22;
+  background-image:url('/assets/images/theme/bootstrap/cyan_bg.png') ;
   /* Fonts */
   font-family: 'Ubuntu Condensed', sans-serif;
   font-size: 16px;
   color: rgba(255,255,255,0.70)!important;
   letter-spacing: 0.2px;
   text-transform: capitalize;
+
   /* Others */
   margin: 0px;
   padding: 0px;
@@ -576,8 +578,8 @@ label {
 /* ----------------------------------- */
 
 /*FOR ITEM SELECTOR CSS-SAGAR*/
- .amexio-itemselector{
- background-color: #1b1d22!important;
+.amexio-itemselector{
+  background-color: #1b1d22!important;
 }
 /*For Itemselector ICONS-SAGAR*/
 .amexio-itemselector .fa{

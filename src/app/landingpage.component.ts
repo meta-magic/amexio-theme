@@ -60,6 +60,14 @@ export class LandingPageComponent implements OnInit {
       'name': 'Default', 'fileName': 'styles'
     }, {
       'name': 'Default', 'fileName': 'BTS-Orange'
+    },{
+      'name': 'Default', 'fileName': 'BTS-Cyan'
+    },{
+      'name': 'Default', 'fileName': 'BTS-Limegreen'
+    },{
+      'name': 'Default', 'fileName': 'BTS-Polygon'
+    },{
+      'name': 'Default', 'fileName': 'BTS-Red'
     }]
   }
 
