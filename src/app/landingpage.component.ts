@@ -129,6 +129,7 @@ export class LandingPageComponent implements OnInit {
       font2.href = "https://fonts.googleapis.com/icon?family=Material+Icons";
       document.head.appendChild(font2);
     } else {
+
       //this is for default theme
       let linkEl = document.createElement('link');
       linkEl.setAttribute('rel', 'stylesheet');
@@ -136,11 +137,13 @@ export class LandingPageComponent implements OnInit {
       linkEl.href = CSS_LOCATION + '/' + theme.fileName + '.css';
       document.head.appendChild(linkEl);
 
+      //Font of Bootstrap
       let font1 = document.createElement('link');
       font1.setAttribute('rel', 'stylesheet');
-      font1.id = 'custom_theme';
-      font1.href = "https://fonts.googleapis.com/css?family=Ubuntu+Condensed";
+      font1.id='custom_theme';
+      font1.href = "https://fonts.googleapis.com/css?family=Shadows+Into+Light";
       document.head.appendChild(font1);
+
     }
 
   }

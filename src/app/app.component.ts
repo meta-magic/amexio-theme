@@ -76,12 +76,20 @@ export class AppComponent implements OnInit{
       font1.href = "https://fonts.googleapis.com/css?family=Roboto:400,500,700;";
       document.head.appendChild(font1);
 
+
       let font2 = document.createElement('link');
       font2.setAttribute('rel', 'stylesheet');
       font2.id='custom_theme';
       font2.href = "https://fonts.googleapis.com/icon?family=Material+Icons";
       document.head.appendChild(font2);
     }else{
+      //Font of Bootstrap
+      let font1 = document.createElement('link');
+      font1.setAttribute('rel', 'stylesheet');
+      font1.id='custom_theme';
+      font1.href = "https://fonts.googleapis.com/css?family=Shadows+Into+Light";
+      document.head.appendChild(font1);
+
       //this is for default theme
       let linkEl = document.createElement('link');
       linkEl.setAttribute('rel', 'stylesheet');
