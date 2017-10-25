@@ -466,6 +466,9 @@ Magenta: #F10897
     padding-right: 20px;
     color: #ffffff;
 }
+.amexio-treeview-ul li{
+  padding-left: 0px!important;
+}
 /* ----------------------------------- */
 /*              CAROUSEL               */
 /* ----------------------------------- */

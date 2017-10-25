@@ -736,7 +736,9 @@ label {
 .amexio-treeview-records:hover{
   background-color: #eee!important;
 }
-
+.amexio-treeview-ul li{
+  padding-left: 0px!important;
+}
 
 /* ----------------------------------- */
 /* COMPONENT - TYPEHEAD in simple form */
