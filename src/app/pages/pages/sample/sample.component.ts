@@ -35,6 +35,15 @@ export class SampleComponent implements OnInit {
         },{
           language:'Fishing',
           checked: false
+        },{
+          language:'Cooking',
+          checked: false
+        },{
+          language:'Swimming',
+          checked: false
+        },{
+          language:'Relaxing',
+          checked: false
         }
         ]}};
 

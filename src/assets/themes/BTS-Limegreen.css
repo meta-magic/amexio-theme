@@ -67,6 +67,16 @@ body{
   /* Font */
   font-size: 100%;
 }
+/*For appbar Please change color -SAGAR*/
+/*For Appbar Title*/
+.amexio-appbar .navbar-brand{
+}
+/*For Appbar John Doe*/
+.amexio-appbar .nav-item{
+}
+/*For Appbar icon*/
+.amexio-appbar i{
+}
 /* ----------------------------------- */
 /*           CARD COMPONENT            */
 /* ----------------------------------- */
@@ -503,7 +513,7 @@ label {
 /* @Sagar: What is this for? */
 /*this component is available in Simple Form  of Nationality Fields*/
 .amexio-typeahead .form-control{
-  border-bottom: none;
+  border: 2px solid #666666!important;
 }
 /* @Sagar: What is this style for? */
 /*For msg if TEXT INPUT FIELDS validation in SIMPLE FORM*/

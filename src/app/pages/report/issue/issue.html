@@ -1,87 +1,95 @@
-<div class="row">
-  <div class="col-lg-1"></div>
-  <div class="col-lg-2">
-    <amexio-datapoints [west]="true" [center]="true" [east]="true" [south]="true"  >
-      <amexio-west [contentalign]="'center'" [cClass]="'amexio-datapoints-visual'">
-        <i class="fa fa-check fa-2x"></i>
-      </amexio-west>
-      <amexio-center [contentalign]="'left'">
-        <span class="amexio-datapoints-subtitle-issue">8</span>
-        <br>
-        <span class="amexio-datapoints-subtitle">Closed</span>
-      </amexio-center>
-    </amexio-datapoints>
-  </div>
-  <div class="col-lg-2">
-    <amexio-datapoints [west]="true" [center]="true" [east]="true" [south]="true"  >
-      <amexio-west [contentalign]="'center'" [cClass]="'amexio-datapoints-visual'">
-        <i class="fa fa-envelope-open fa-2x"></i>
-      </amexio-west>
-      <amexio-center [contentalign]="'left'">
+<amexio-card-pane [enableHeader]="true" [enableFooter]="false">
+  <amexio-pane-header>
+    Issue Details
+  </amexio-pane-header>
+  <amexio-pane-body>
+    <div class="row">
+      <div class="col-lg-1"></div>
+      <div class="col-lg-2">
+        <amexio-datapoints [west]="true" [center]="true" [east]="true" [south]="true"  >
+          <amexio-west [contentalign]="'center'" [cClass]="'amexio-datapoints-visual'">
+            <i class="fa fa-check fa-2x"></i>
+          </amexio-west>
+          <amexio-center [contentalign]="'left'">
+            <span class="amexio-datapoints-subtitle-issue">8</span>
+            <br>
+            <span class="amexio-datapoints-subtitle">Closed</span>
+          </amexio-center>
+        </amexio-datapoints>
+      </div>
+      <div class="col-lg-2">
+        <amexio-datapoints [west]="true" [center]="true" [east]="true" [south]="true"  >
+          <amexio-west [contentalign]="'center'" [cClass]="'amexio-datapoints-visual'">
+            <i class="fa fa-envelope-open fa-2x"></i>
+          </amexio-west>
+          <amexio-center [contentalign]="'left'">
             <span class="amexio-datapoints-subtitle-issue">13</span>
-        <br>
+            <br>
             <span class="amexio-datapoints-subtitle">Open</span>
-      </amexio-center>
-    </amexio-datapoints>
-  </div>
+          </amexio-center>
+        </amexio-datapoints>
+      </div>
 
-  <div class="col-lg-2">
-    <amexio-datapoints [west]="true" [center]="true" [east]="true" [south]="true" >
-      <amexio-west [contentalign]="'center'" [cClass]="'amexio-datapoints-visual'">
-        <i class="fa fa-bolt fa-2x"></i>
-      </amexio-west>
-      <amexio-center [contentalign]="'left'">
-        <span class="amexio-datapoints-subtitle-issue">6</span>
-        <br>
-        <span class="amexio-datapoints-subtitle">High</span>
-      </amexio-center>
-    </amexio-datapoints>
-  </div>
+      <div class="col-lg-2">
+        <amexio-datapoints [west]="true" [center]="true" [east]="true" [south]="true" >
+          <amexio-west [contentalign]="'center'" [cClass]="'amexio-datapoints-visual'">
+            <i class="fa fa-bolt fa-2x"></i>
+          </amexio-west>
+          <amexio-center [contentalign]="'left'">
+            <span class="amexio-datapoints-subtitle-issue">6</span>
+            <br>
+            <span class="amexio-datapoints-subtitle">High</span>
+          </amexio-center>
+        </amexio-datapoints>
+      </div>
 
-  <div class="col-lg-2">
-    <amexio-datapoints [west]="true" [center]="true" [east]="true" [south]="true" >
-      <amexio-west [contentalign]="'center'" [cClass]="'amexio-datapoints-visual'">
-        <i class="fa fa-medium fa-2x"></i>
-      </amexio-west>
-      <amexio-center [contentalign]="'left'">
-        <span class="amexio-datapoints-subtitle-issue">9</span>
-        <br>
-        <span class="amexio-datapoints-subtitle">Medium</span>
-      </amexio-center>
-    </amexio-datapoints>
-  </div>
+      <div class="col-lg-2">
+        <amexio-datapoints [west]="true" [center]="true" [east]="true" [south]="true" >
+          <amexio-west [contentalign]="'center'" [cClass]="'amexio-datapoints-visual'">
+            <i class="fa fa-medium fa-2x"></i>
+          </amexio-west>
+          <amexio-center [contentalign]="'left'">
+            <span class="amexio-datapoints-subtitle-issue">9</span>
+            <br>
+            <span class="amexio-datapoints-subtitle">Medium</span>
+          </amexio-center>
+        </amexio-datapoints>
+      </div>
 
-  <div class="col-lg-2">
-    <amexio-datapoints [west]="true" [center]="true" [east]="true" [south]="true" >
-      <amexio-west [contentalign]="'center'" [cClass]="'amexio-datapoints-visual'">
-        <i class="fa fa-low-vision fa-2x"></i>
-      </amexio-west>
-      <amexio-center [contentalign]="'left'">
-        <span class="amexio-datapoints-subtitle-issue">6</span>
-        <br>
-        <span class="amexio-datapoints-subtitle">Low</span>
-      </amexio-center>
-    </amexio-datapoints>
-  </div>
-  <div class="col-lg-1"></div>
-</div>
-<br/>
-<div class="row">
-  <div class="col-lg-12">
-    <amexio-data-table
-      [title]="'Issue'"
-      [pageSize] = "10"
-      [dataReader]="'response.data'"
-      [checkboxSelect]="false"
-      [httpUrl]="'assets/data/issue.json'"
-      [httpMethod]="'get'"
-      (selectedRowData)="onRowSelect($event)"
-      (rowSelect)="onRowClick($event)" [cClass]="'gridStyle'" [tableDatacClass]="'amexio-grid-record'" [tableTitlecClass]="'amexio-grid-header'" [tableHeadercClass]="'amexio-grid-recordheader'">
-      <amexio-data-table-column [dataIndex]="'date'" [dataType]="'string'" [hidden]="false" [text]="'Date'"></amexio-data-table-column>
-      <amexio-data-table-column [dataIndex]="'status'" [dataType]="'string'" [hidden]="false" [text]="'Status'"></amexio-data-table-column>
-      <amexio-data-table-column [dataIndex]="'issue'" [dataType]="'string'" [hidden]="false" [text]="'Issue'"></amexio-data-table-column>
-      <amexio-data-table-column [dataIndex]="'severity'" [dataType]="'string'" [hidden]="false" [text]="'Severity'"></amexio-data-table-column>
-    </amexio-data-table>
+      <div class="col-lg-2">
+        <amexio-datapoints [west]="true" [center]="true" [east]="true" [south]="true" >
+          <amexio-west [contentalign]="'center'" [cClass]="'amexio-datapoints-visual'">
+            <i class="fa fa-low-vision fa-2x"></i>
+          </amexio-west>
+          <amexio-center [contentalign]="'left'">
+            <span class="amexio-datapoints-subtitle-issue">6</span>
+            <br>
+            <span class="amexio-datapoints-subtitle">Low</span>
+          </amexio-center>
+        </amexio-datapoints>
+      </div>
+      <div class="col-lg-1"></div>
+    </div>
+    <br/>
+    <div class="row">
+      <div class="col-lg-12">
+        <amexio-data-table
+          [title]="'Issue'"
+          [pageSize] = "10"
+          [dataReader]="'response.data'"
+          [checkboxSelect]="false"
+          [httpUrl]="'assets/data/issue.json'"
+          [httpMethod]="'get'"
+          (selectedRowData)="onRowSelect($event)"
+          (rowSelect)="onRowClick($event)" [cClass]="'gridStyle'" [tableDatacClass]="'amexio-grid-record'" [tableTitlecClass]="'amexio-grid-header'" [tableHeadercClass]="'amexio-grid-recordheader'">
+          <amexio-data-table-column [dataIndex]="'date'" [dataType]="'string'" [hidden]="false" [text]="'Date'"></amexio-data-table-column>
+          <amexio-data-table-column [dataIndex]="'status'" [dataType]="'string'" [hidden]="false" [text]="'Status'"></amexio-data-table-column>
+          <amexio-data-table-column [dataIndex]="'issue'" [dataType]="'string'" [hidden]="false" [text]="'Issue'"></amexio-data-table-column>
+          <amexio-data-table-column [dataIndex]="'severity'" [dataType]="'string'" [hidden]="false" [text]="'Severity'"></amexio-data-table-column>
+        </amexio-data-table>
 
-  </div>
-</div>
+      </div>
+    </div>
+
+  </amexio-pane-body>
+</amexio-card-pane>
