@@ -76,9 +76,13 @@ body{
 /*For appbar Please change color -SAGAR*/
 /*For Appbar Title*/
 .amexio-appbar .navbar-brand{
+    font-size: 24px;
+    font-weight: bold;
 }
 /*For Appbar John Doe*/
 .amexio-appbar .nav-item{
+    font-size: 14px;
+    margin-top: 5px;
 }
 /*For Appbar icon*/
 .amexio-appbar i{
@@ -244,13 +248,6 @@ body{
 /* ----------------------------------- */
 /*              DATA GRID              */
 /* ----------------------------------- */
-/*Colours Used
-Background:
-Body: #1C2949
-Cyan: #2CD2EC
-Dark Blue: #02195F
-Magenta: #F10897
-*/
 .amexio-grid-header{
     /* Background */
     background-color: #80E6F5 !important; /* For browsers that do not support gradients */
@@ -563,7 +560,7 @@ label {
     background-color: #1b1d22;
 }
 .amexio-dropdown-menu{
-    background-color: #1b1d22;!important;
+    background-color: #1b1d22!important;
     border: 2px solid #666666;
     border-radius: 0px;
     padding: 10px;
@@ -574,7 +571,7 @@ label {
     padding: 5px;
 }
 .amexio-dropdown-records:hover{
-    background-color: #000000;!important;
+    background-color: #000000!important;
 }
 /* ----------------------------------- */
 /*      DATE AND TIME COMPONENTS       */
@@ -600,7 +597,10 @@ label {
 /* ----------------------------------- */
 /* Backgound */
 .amexio-itemselector{
-  background-color: #CC0000!important;
+    background-color: #1b1d22!important;
+    border-bottom: 3px solid #2CD2EC;
+    padding: 5px;
+
 }
 /* Action Buttons*/
 .amexio-itemselector .fa{
@@ -613,10 +613,11 @@ label {
 }
 .amexio-itemselector-header{
   font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
   border: solid 1px #111111;
   line-height: 15px;
   height:48px;
-  padding: 0px 24px 0px 24px!important;
+  padding: 0px 12px 0px 12px!important;
   text-align: left;
   background-color: #80E6F5 !important; /* For browsers that do not support gradients */
   background: linear-gradient(#80E6F5, #0CB5CF) !important;
@@ -630,14 +631,15 @@ label {
   font-family: 'PT Sans', sans-serif;
   border: 1px solid #111111;
   color: rgba(255,255,255,0.70)!important;
+    padding-left: 24px;
 }
 /*ITEM SELECTOR RECORD-SAGAR*/
 .amexio-itemselector-records-selected{
-  color: #2CD2EC;
-  background-color: #24262D !important;
+    background-color: #24262D !important;
+      color: #F10897 !important;
 }
 .amexio-itemselector-records:hover{
-  color: #2CD2EC;
+    color: #2CD2EC !important;
   background-color: #24262D !important;
 }
 /* ----------------------------------- */
@@ -677,7 +679,7 @@ label {
     width: 14px;
     height: 14px;
     margin-top: -9px;
-    border: 2px solid #000;
+    border: 2px solid rgba(255,255,255,0.70);
     text-align: center;
     transition: all 0.4s ease;
 }
@@ -699,7 +701,7 @@ label {
     transition: transform 200ms ease-out;
 }
 .amexio-checkbox[type="checkbox"]:disabled + label:before {
-    border-color: #cccccc;
+    border-color: rgba(255,255,255,0.70);
 }
 .amexio-checkbox[type="checkbox"]:disabled:focus + label:before, .amexio-checkbox input[type="checkbox"]:disabled:hover + label:before {
     background-color: inherit;
@@ -715,7 +717,7 @@ label {
     height: 3px;
     margin-top: -4px;
     border-style: solid;
-    border-color: #ffffff;
+    border-color: rgba(255,255,255,0.70);
     border-width: 0 0 3px 3px;
     border-image: none;
     transform: rotate(-45deg) scale(0);
@@ -737,7 +739,7 @@ label {
 }
 .amexio-checkbox[type="checkbox"]:checked + label:before {
     animation: borderscale 200ms ease-in;
-    background: #795548;
+    background: none;
 }
 .amexio-checkbox[type="checkbox"]:checked + label:after {
     transform: rotate(-45deg) scale(1);

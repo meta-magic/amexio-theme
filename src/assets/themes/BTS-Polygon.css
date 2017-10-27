@@ -62,19 +62,26 @@ body{
 /* ----------------------------------- */
 .amexio-appbar {
     color: #70196F;
+    background-color: rgba(255, 255, 255, 0.8);
+  border-bottom: 2px solid #70196F;
 }
 /*For appbar Please change color -SAGAR*/
 /*For Appbar Title*/
 .amexio-appbar .navbar-brand{
-  color: red !important;
+    color: #E84C1A !important;
+    font-size: 24px;
+    font-weight: 400;
 }
 /*For Appbar John Doe*/
 .amexio-appbar .nav-item{
-  color: red !important;
+    color: #70196F !important;
 }
 /*For Appbar icon*/
 .amexio-appbar i{
-  color: red !important;
+    display: block;
+    color: #70196F !important;
+
+    padding: 10px;
 }
 /* ----------------------------------- */
 /*           CARD COMPONENT            */
@@ -159,7 +166,7 @@ body{
     overflow:hidden;
     float: left;
     border-right: 2px solid #70196F;
-    background-color: rgba(255, 255, 255, 0.4)!important;
+    background-color: rgba(255, 255, 255, 0.8)!important;
     color: #70196F;
 }
 .amexio-sidenav-left .nav-item{
@@ -175,7 +182,7 @@ body{
 .amexio-sidenav-left .nav-item:hover {
     cursor: pointer;
     color: #70196F!important;
-    background-color: rgba(255, 255, 255, 0.8)!important;
+    background-color: #ffffff!important;
 }
 .amexio-sidenav-left .nav-item a{
     text-decoration: none;
@@ -238,7 +245,7 @@ body{
     font-size: 14px;
     line-height: 15px;
     color: #9A5E9A;
-    background-color: rgba(255, 255, 255, 0.6);
+    border: none;
 }
 .amexio-grid-record td{
     padding: 0px 24px 0px 24px!important;
@@ -252,9 +259,7 @@ body{
     width: 50px!important;
 }
 .amexio-grid-bordered td{
-    border-bottom: transparent!important;
-    border-right: transparent!important;
-    border-left: transparent!important;
+    border: none;
 }
 /* Pagination CSS begins here */
 /* Container */
@@ -378,7 +383,7 @@ body{
     /* Background */
     background: #70196F !important; /* For browsers that do not support gradients */
     border: 2px solid #70196F !important;
-    color: #E84C1A;
+    color: #E84C1A!important;
     font-weight: 700;
 }
 .amexio-tabs .nav-link:active:after{
@@ -522,7 +527,7 @@ label {
     text-transform:capitalize;
 }
 .amexio-dropdown-menu{
-    background-color: #ffffff;!important;
+    background-color: #ffffff!important;
     border: 2px solid #9A5E9A;
     border-radius: 4px;
     padding: 10px;
@@ -532,7 +537,7 @@ label {
     padding: 5px;
 }
 .amexio-dropdown-records:hover{
-    background-color: #000000;!important;
+    background-color: #000000!important;
 }
 /* ----------------------------------- */
 /*      DATE AND TIME COMPONENTS       */
@@ -547,10 +552,10 @@ label {
 /*DATE PICKER COMPONENT-SAGAR*/
 .amexio-datepicker{
   background-color: #1b1d22;
-  color: rgba(255,255,255,0.70)!important;
+  background-color: #ffffff!important;
 }
 .amexio-datepicker .dateSelected{
-  background-color: rgba(255,255,255,0.70)!important;
+  background-color: #ffffff!important;
   color: #1b1d22;
 }
 /* ----------------------------------- */
@@ -558,39 +563,42 @@ label {
 /* ----------------------------------- */
 /* Backgound */
  .amexio-itemselector{
-    background-color: #CC0000!important;
+    background-color: none!important;
+     border: 2px solid #70196F;
+    border-radius: 4px!important;
+
 }
 /* Action Buttons*/
 .amexio-itemselector .fa{
     padding: 5px;
-    color: rgba(255,255,255,0.70)!important;
+    color: #70196F!important;
     padding-left: 5px;
-    border: solid 2px #666666!important;
+    border: solid 2px #70196F!important;
     border-radius: 4px;
-    background-color: #1b1d22;
+    background: #FFFFFF;
 }
 .amexio-itemselector-header{
     font-family: 'Open Sans', sans-serif;
-    border: solid 1px #111111;
     line-height: 15px;
     color: #70196F;
     height:48px;
     padding: 0px 24px 0px 24px!important;
     text-align: left;
-    background-color: #1b1d22!important;
+    background-color: #FFFFFF!important;
 }
 .amexio-itemselector-records{
     font-family: 'Open Sans', sans-serif;
-    border: 1px solid #111111;
+    padding-left: 24px;
+    color: #9A5E9A;
 }
 /*ITEM SELECTOR RECORD-SAGAR*/
 .amexio-itemselector-records-selected{
-  background-color: #24262D !important;
-  color: #70196F;
+    color: #ffffff!important;
+    background-color: #9A5E9A!important;
 }
 .amexio-itemselector-records:hover{
-    background-color: #24262D !important;
-    color: #70196F;
+    color: #E84C1A;
+    background-color: rgba(255,255,255,0.70);
 }
 /* ----------------------------------- */
 /*         CHECKBOX COMPONENT          */
@@ -629,12 +637,12 @@ label {
     width: 14px;
     height: 14px;
     margin-top: -9px;
-    border: 2px solid #000;
+    border: 2px solid #70196F;
     text-align: center;
     transition: all 0.4s ease;
 }
 .amexio-checkbox[type="checkbox"]:checked + label:before {
-    border: 2px solid rgba(255,255,255,0.70);
+    border: 2px solid #70196F;
 }
 .amexio-checkbox[type="checkbox"] + label:after {
     box-sizing: content-box;
@@ -689,7 +697,7 @@ label {
 }
 .amexio-checkbox[type="checkbox"]:checked + label:before {
     animation: borderscale 200ms ease-in;
-    background: #795548;
+    background: #70196F;
 }
 .amexio-checkbox[type="checkbox"]:checked + label:after {
     transform: rotate(-45deg) scale(1);
