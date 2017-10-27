@@ -64,10 +64,10 @@ body{
     /* Background */
     background-color: #80E6F5 !important; /* For browsers that do not support gradients */
     background: linear-gradient(#80E6F5, #0CB5CF) !important;
-    background: -webkit-linear-gradient(#80E6F5, #0CB5CF); !important; /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#80E6F5, #0CB5CF); !important; /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#80E6F5, #0CB5CF); !important; /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#80E6F5, #0CB5CF); !important; /* Standard syntax */
+    background: -webkit-linear-gradient(#80E6F5, #0CB5CF)!important; /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#80E6F5, #0CB5CF)!important; /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#80E6F5, #0CB5CF)!important; /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#80E6F5, #0CB5CF)!important; /* Standard syntax */
     border-bottom: solid 3px #2CD2EC;
     color: #02195F;
     /* Font */
@@ -104,10 +104,10 @@ body{
     padding: 20px 24px;
     background-color: #80E6F5 !important; /* For browsers that do not support gradients */
     background: linear-gradient(#80E6F5, #0CB5CF) !important;
-    background: -webkit-linear-gradient(#80E6F5, #0CB5CF); !important; /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#80E6F5, #0CB5CF); !important; /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#80E6F5, #0CB5CF); !important; /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#80E6F5, #0CB5CF); !important; /* Standard syntax */
+    background: -webkit-linear-gradient(#80E6F5, #0CB5CF)!important; /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#80E6F5, #0CB5CF)!important; /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#80E6F5, #0CB5CF)!important; /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#80E6F5, #0CB5CF)!important; /* Standard syntax */
     border-bottom: solid 1px #ffffff;
     /* Border */
     border-radius: 0px;
@@ -156,10 +156,10 @@ body{
     padding: 0px;
     background-color: #80E6F5 !important; /* For browsers that do not support gradients */
     background: linear-gradient(#80E6F5, #0CB5CF) !important;
-    background: -webkit-linear-gradient(#80E6F5, #0CB5CF); !important; /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#80E6F5, #0CB5CF); !important; /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#80E6F5, #0CB5CF); !important; /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#80E6F5, #0CB5CF); !important; /* Standard syntax */
+    background: -webkit-linear-gradient(#80E6F5, #0CB5CF)!important; /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#80E6F5, #0CB5CF)!important; /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#80E6F5, #0CB5CF)!important; /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#80E6F5, #0CB5CF)!important; /* Standard syntax */
     border-radius: 0px;
     font-size: 16px;
     padding: 0px;
@@ -186,10 +186,10 @@ body{
     border-right: 3px solid #2CD2EC;
     background-color: #1C2949!important;/* For browsers that do not support gradients */
     background: linear-gradient(rgba(28, 41, 73, 0.4), rgba(28, 41, 73, 0.80)) !important;
-    background: -webkit-linear-gradient(rgba(28, 41, 73, 0.4), rgba(28, 41, 73, 0.80)); !important; /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(rgba(28, 41, 73, 0.4), rgba(28, 41, 73, 0.80)); !important; /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(rgba(28, 41, 73, 0.4), rgba(28, 41, 73, 0.80)); !important; /* For Firefox 3.6 to 15 */
-    background: linear-gradient(rgba(28, 41, 73, 0.4), rgba(28, 41, 73, 0.80)); !important; /* Standard syntax */
+    background: -webkit-linear-gradient(rgba(28, 41, 73, 0.4), rgba(28, 41, 73, 0.80))!important; /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(rgba(28, 41, 73, 0.4), rgba(28, 41, 73, 0.80))!important; /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(rgba(28, 41, 73, 0.4), rgba(28, 41, 73, 0.80))!important; /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rgba(28, 41, 73, 0.4), rgba(28, 41, 73, 0.80))!important; /* Standard syntax */
 
 }
 .amexio-sidenav-left .nav-item{
@@ -218,10 +218,10 @@ body{
     border-right: solid 10px #F10897;
     background-color: #80E6F5 !important; /* For browsers that do not support gradients */
     background: linear-gradient(#80E6F5, #0CB5CF) !important;
-    background: -webkit-linear-gradient(#80E6F5, #0CB5CF); !important; /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#80E6F5, #0CB5CF); !important; /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#80E6F5, #0CB5CF); !important; /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#80E6F5, #0CB5CF); !important; /* Standard syntax */
+    background: -webkit-linear-gradient(#80E6F5, #0CB5CF)!important; /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#80E6F5, #0CB5CF)!important; /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#80E6F5, #0CB5CF)!important; /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#80E6F5, #0CB5CF)!important; /* Standard syntax */
     color: #FFFFFF!important;
     border-bottom: solid 10px #F10897!important;
 }
@@ -252,10 +252,10 @@ body{
     /* Background */
     background-color: #80E6F5 !important; /* For browsers that do not support gradients */
     background: linear-gradient(#80E6F5, #0CB5CF) !important;
-    background: -webkit-linear-gradient(#80E6F5, #0CB5CF); !important; /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#80E6F5, #0CB5CF); !important; /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#80E6F5, #0CB5CF); !important; /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#80E6F5, #0CB5CF); !important; /* Standard syntax */
+    background: -webkit-linear-gradient(#80E6F5, #0CB5CF)!important; /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#80E6F5, #0CB5CF)!important; /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#80E6F5, #0CB5CF)!important; /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#80E6F5, #0CB5CF)!important; /* Standard syntax */
     font-size: 16px;
     padding: 20px 24px;
     overflow: auto;
@@ -454,10 +454,10 @@ body{
     /* Background */
     background-color: #80E6F5 !important; /* For browsers that do not support gradients */
     background: linear-gradient(#80E6F5, #0CB5CF) !important;
-    background: -webkit-linear-gradient(#80E6F5, #0CB5CF); !important; /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#80E6F5, #0CB5CF); !important; /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#80E6F5, #0CB5CF); !important; /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#80E6F5, #0CB5CF); !important; /* Standard syntax */
+    background: -webkit-linear-gradient(#80E6F5, #0CB5CF)!important; /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#80E6F5, #0CB5CF)!important; /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#80E6F5, #0CB5CF)!important; /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#80E6F5, #0CB5CF)!important; /* Standard syntax */
 }
 .amexio-treeview-records-selected i{
     padding-right: 20px;
@@ -621,10 +621,10 @@ label {
   text-align: left;
   background-color: #80E6F5 !important; /* For browsers that do not support gradients */
   background: linear-gradient(#80E6F5, #0CB5CF) !important;
-  background: -webkit-linear-gradient(#80E6F5, #0CB5CF); !important; /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(#80E6F5, #0CB5CF); !important; /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(#80E6F5, #0CB5CF); !important; /* For Firefox 3.6 to 15 */
-  background: linear-gradient(#80E6F5, #0CB5CF); !important; /* Standard syntax */
+  background: -webkit-linear-gradient(#80E6F5, #0CB5CF)!important; /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#80E6F5, #0CB5CF)!important; /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#80E6F5, #0CB5CF)!important; /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#80E6F5, #0CB5CF)!important; /* Standard syntax */
   color: #02195F;
 }
 .amexio-itemselector-records{
