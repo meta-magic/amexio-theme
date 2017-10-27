@@ -60,11 +60,7 @@ body{
     /* Background */
     background-color: #F58338 !important; /* For browsers that do not support gradients */
     background: linear-gradient(#F58338, #E84C1A) !important;
-    background: -webkit-linear-gradient(#40434D, #000000)!important; /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#40434D, #000000)!important; /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#40434D, #000000)!important; /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#40434D, #000000)!important; /* Standard syntax */
-    /* Font */
+      /* Font */
     font-size: 100%;
 }
 /*For appbar Please change color -SAGAR*/
@@ -510,7 +506,7 @@ label {
     background-color: #1b1d22;
 }
 .amexio-dropdown-menu{
-    background-color: #1b1d22!important;
+    background-color: #1b1d22;!important;
     border: 2px solid #666666;
     border-radius: 0px;
     padding: 10px;
@@ -521,7 +517,7 @@ label {
     padding: 5px;
 }
 .amexio-dropdown-records:hover{
-    background-color: #000000!important;
+    background-color: #000000;!important;
 }
 /* ----------------------------------- */
 /*      DATE AND TIME COMPONENTS       */
@@ -727,10 +723,10 @@ label {
 .btn-primary {
     background-color: #F58338 !important; /* For browsers that do not support gradients */
     background: linear-gradient(#F58338, #E84C1A) !important;
-    background: -webkit-linear-gradient(#40434D, #000000)!important; /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#40434D, #000000)!important; /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#40434D, #000000)!important; /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#40434D, #000000)!important; /* Standard syntax */
+    background: -webkit-linear-gradient(#40434D, #000000); !important; /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#40434D, #000000); !important; /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#40434D, #000000); !important; /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#40434D, #000000); !important; /* Standard syntax */
     border-radius: 4px;
     color: #fff;
 }
