@@ -77,10 +77,10 @@ body{
     color: #417505!important;
 }
 .amexio-appbar i{
-    border: solid 2px #417505;
+    /*border: solid 2px #417505;*/
     padding: 5px;
     color: #417505!important;
-    background-color: beige;
+    /*background-color: beige;*/
     border-radius: 2px;
 }
 /* ----------------------------------- */
