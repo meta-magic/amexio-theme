@@ -64,10 +64,10 @@ body{
     /* Background */
     background-color: #80E6F5 !important; /* For browsers that do not support gradients */
     background: linear-gradient(#80E6F5, #0CB5CF) !important;
-    background: -webkit-linear-gradient(#80E6F5, #0CB5CF)!important; /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#80E6F5, #0CB5CF)!important; /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#80E6F5, #0CB5CF)!important; /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#80E6F5, #0CB5CF)!important; /* Standard syntax */
+    background: -webkit-linear-gradient(#80E6F5, #0CB5CF); !important; /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#80E6F5, #0CB5CF); !important; /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#80E6F5, #0CB5CF); !important; /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#80E6F5, #0CB5CF); !important; /* Standard syntax */
     border-bottom: solid 3px #2CD2EC;
     color: #02195F;
     /* Font */
