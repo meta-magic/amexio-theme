@@ -94,7 +94,7 @@ body{
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.6);
   padding: 12px;
   border: 2px solid #417505;
-  background-image:url('/assets/images/theme/bootstrap/LimeGreen-header.png');
+  background-image:url('/assets/images/theme/bootstrap/Header.png');
   background-repeat:repeat-x;
 }
 .amexio-card .card-header{
@@ -167,7 +167,7 @@ body{
   min-height: 1000px;
 }
 .amexio-sidenav-left{
- margin: 10px, 0px, 10px, 10px;
+ margin: 10px 0px 10px 10px;
   width: 100%;
   height: 100%;
   overflow:hidden;
@@ -430,7 +430,8 @@ font-weight: bold;
 }
 /* @Sagar: Rename as amexio-treeview-records:hover */
 .amexio-treeview-records:hover{
-  background-color: #1b1d22!important;
+  background-color: beige;!important;
+  color: #417505!important;
 }
 /* @Sagar: Rename as amexio-treeview-expandcollapseicon */
 .amexio-treeview-navigation-icons{
