@@ -291,6 +291,10 @@ body{
     border: solid 1px #9A5E9A;
     border-radius: 0px;
 }
+.amexio-grid-record-selected{
+  color: #ffffff;
+  background-color: #9A5E9A;
+}
 .amexio-grid-groupby-seperator{
     color: #6F6F6F!important;
 }
