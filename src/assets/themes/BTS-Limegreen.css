@@ -61,10 +61,10 @@ body{
   /* Background */
   background-color: #C4E800 !important; /* For browsers that do not support gradients */
   background: linear-gradient(#C4E800, #92CD00) !important;
-  background: -webkit-linear-gradient(#C4E800, #92CD00)!important; /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(#C4E800, #92CD00)!important; /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(#C4E800, #92CD00)!important; /* For Firefox 3.6 to 15 */
-  background: linear-gradient(#C4E800, #92CD00)!important; /* Standard syntax */
+  background: -webkit-linear-gradient(#C4E800, #92CD00); !important; /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#C4E800, #92CD00); !important; /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#C4E800, #92CD00); !important; /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#C4E800, #92CD00); !important; /* Standard syntax */
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.6);
 }
 
@@ -77,10 +77,8 @@ body{
     color: #417505!important;
 }
 .amexio-appbar i{
-    /*border: solid 2px #417505;*/
     padding: 5px;
     color: #417505!important;
-    /*background-color: beige;*/
     border-radius: 2px;
 }
 /* ----------------------------------- */
@@ -167,7 +165,7 @@ body{
   min-height: 1000px;
 }
 .amexio-sidenav-left{
- margin: 10px 0px 10px 10px;
+ margin: 10px, 0px, 10px, 10px;
   width: 100%;
   height: 100%;
   overflow:hidden;
@@ -217,7 +215,7 @@ body{
   padding-right: 5px;
 }
 .amexio-sidenav-left .amexio-sidenavbar-subheader:hover {
-  background: beige !important;
+  background: biege !important;
 }
 /* ----------------------------------- */
 /*              DATA GRID              */
@@ -270,29 +268,27 @@ body{
   border: none;
 }
 .amexio-grid-pagination {
-  color: #ffffff!important;
+  color: rgba(255,255,255,0.70)!important;
   float: right!important;
+  background-color: #FFFFFF;
 }
 .amexio-grid-pagination span{
   margin-right: 20px;
   display: inline-block;
   float: left;
-  color: #FFFFFF!important;
-  background-color: #417505!important;
+  color: rgba(255,255,255,0.70)!important;
 }
 .amexio-grid-pagination span button{
-  color: #FFFFFF!important;
-  border: solid 1px #111;
-  background-color: #417505!important;
+  color: #464a4c!important;
+  border: solid 1px #464a4c;
 }
 .amexio-grid-pagination-outer{
-  background-color: #417505!important;
-  height: 50px;
-  border: none!important;
+  border: none;
 }
 /* This is page level flyout */
 .amexio-grid-opertions .amexio-dropdown-menu{
-  color: #417505!important;
+  color: rgba(255,255,255,0.70)!important;
+  background: #000000!important;
   border: solid 1px #00CC00;
 }
 
@@ -430,8 +426,7 @@ font-weight: bold;
 }
 /* @Sagar: Rename as amexio-treeview-records:hover */
 .amexio-treeview-records:hover{
-  background-color: beige;!important;
-  color: #417505!important;
+  background-color: #1b1d22!important;
 }
 /* @Sagar: Rename as amexio-treeview-expandcollapseicon */
 .amexio-treeview-navigation-icons{
@@ -462,7 +457,7 @@ font-weight: bold;
 /* ----------------------------------- */
 /* @Sagar: Rename as amexio-carousel */
 .amexio-carousel{
-  color: #417505!important;
+  color: rgba(255,255,255,0.70)!important;
 }
 .amexio-carousel-backgound{
   background-color: transparent !important;
@@ -528,14 +523,14 @@ label {
   border-radius: 0px;
 }
 .popover-title {
-  background-color: #417505;
+  background-color: #455A64;
   color: #FFFFFF;
   font-size: 20px;
   border: none;
   border-radius: 0px;
 }
 .popover-content {
-  color: #417505;
+  color: #455A64;
   border-radius: 0px;
   color: rgba(0,0,0,0.87);
   font-size: 13px;
@@ -572,7 +567,7 @@ label {
 }
 /* @Sagar: Please rename as amexio-dropdown-records:hover */
 .amexio-dropdown-records:hover{
-  background-color: gray;!important;
+  background-color: #000000;!important;
 }
 /* ----------------------------------- */
 /*      DATE AND TIME COMPONENTS       */
@@ -586,10 +581,10 @@ label {
   border: none!important;
 }
 /*DATE-TIME -COMPONENT*/
-.amexio-datepicker ,.amexio-dropdown-records ,.dropdown-menu{
-  color: #417505!important;
+/*.amexio-datepicker ,.amexio-dropdown-records ,.dropdown-menu{
+  color: rgba(255,255,255,0.70)!important;
 }
-
+*/
 /* @Sagar: DISCUSS Why is this CSS interfering with Amexio-Dropdown? */
 /*.dropdown{
 }
@@ -685,12 +680,12 @@ label {
   width: 14px;
   height: 14px;
   margin-top: -9px;
-  border: 2px solid #000;
+  border: 2px solid #417505;
   text-align: center;
   transition: all 0.4s ease;
 }
 .amexio-checkbox[type="checkbox"]:checked + label:before {
-  border: 2px solid rgba(255,255,255,0.70);
+  border: 2px solid #417505;
 }
 .amexio-checkbox[type="checkbox"] + label:after {
   box-sizing: content-box;

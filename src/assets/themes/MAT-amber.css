@@ -145,7 +145,7 @@ body{
 .amexio-datapoints-title{
     font-size: 36px;
     font-weight: bold;
-    color: #FFC107;
+    color: #FFC107; 
 }
 .amexio-datapoints-footer{
     /* Background */
@@ -668,12 +668,12 @@ label {
     width: 14px;
     height: 14px;
     margin-top: -9px;
-    border: 2px solid #000;
+    border: 2px solid rgba(0,0,0,0.54);
     text-align: center;
     transition: all 0.4s ease;
 }
 .amexio-checkbox[type="checkbox"]:checked + label:before {
-    border: 2px solid rgba(255,255,255,0.70);
+    border: 2px solid rgba(0,0,0,0.54);
 }
 .amexio-checkbox[type="checkbox"] + label:after {
     box-sizing: content-box;
@@ -706,7 +706,7 @@ label {
     height: 3px;
     margin-top: -4px;
     border-style: solid;
-    border-color: #ffffff;
+    border-color: rgba(0,0,0,0.54);
     border-width: 0 0 3px 3px;
     border-image: none;
     transform: rotate(-45deg) scale(0);
