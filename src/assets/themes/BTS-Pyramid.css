@@ -4,8 +4,11 @@
 body{
   /* Background */
   background-color: #F0EEE9;
+  background-image:url('/assets/images/theme/bootstrap/Pyramid-bg.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   /* Fonts */
-  font-family: 'PT-Sans', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-size: 16px;
   color: rgba(255,255,255,0.70)!important;
   letter-spacing: 0.3px;
@@ -57,58 +60,48 @@ body{
 /*           APPBAR COMPONENT          */
 /* ----------------------------------- */
 .amexio-appbar {
-  font-family: 'PT Serif', serif;
+  font-family: 'Quicksand', sans-serif;
   /* Background */
-  background-color: #C4E800 !important; /* For browsers that do not support gradients */
-  background: linear-gradient(#C4E800, #92CD00) !important;
-  background: -webkit-linear-gradient(#C4E800, #92CD00)!important; /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(#C4E800, #92CD00)!important; /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(#C4E800, #92CD00)!important; /* For Firefox 3.6 to 15 */
-  background: linear-gradient(#C4E800, #92CD00)!important; /* Standard syntax */
-  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.6);
+  background-image: linear-gradient(to right, #FFFFFF, #FEFEFE, rgba(1, 114, 184, 0.8), rgba(0, 33, 76, 0.7));
 }
-
 .amexio-appbar .navbar-brand{
-  color: #417505!important;
+  color: #02468D!important;
   font-size: 24px;
-  font-weight: bold;
+  font-weight: 700;
 }
 .amexio-appbar .nav-item{
-    color: #417505!important;
+    color: #1FBCD2!important;
 }
 .amexio-appbar i{
     padding: 5px;
-    color: #417505!important;
+    color: #1FBCD2!important;
     border-radius: 2px;
 }
 /* ----------------------------------- */
 /*           CARD COMPONENT            */
 /* ----------------------------------- */
 .amexio-card{
-  border-radius: 5px;
+  border-radius: 0px;
   color: #FFFFFF;
-  background-color: #FFFFFF;
+  background-color: rgba(0, 43, 87, 0.7);
   border: none;
-  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.6);
   padding: 12px;
-  border: 2px solid #417505;
-  background-image:url('/assets/images/theme/bootstrap/Header.png');
-  background-repeat:repeat-x;
+  border: 2px solid #F3C22A;
 }
 .amexio-card .card-header{
-    font-family: 'PT Serif', serif;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
   /* Background */
-  padding: 6px 12px;
+  padding: 12px 24px;
   /* Border */
   border-radius: 5px;
   border-bottom: none;
   /* Font */
   font-size: 20px;
-  color: #417505;
-  font-weight: bold;
+  color: #F4C128;
   /* Others */
   overflow: auto;
-    background-color: transparent;
+  background-color: transparent;
 }
 .amexio-card .card-block{
   border-radius: 0px;
@@ -118,8 +111,8 @@ body{
   font-weight: 400;
   padding-left: 16px;
   padding-right: 16px;
-  background-color: #FFFFFF;
-  border: 2px solid #417505;
+  background-color: transparent;
+  border: none;
 }
 .amexio-card .card-footer{
   border-radius: 0px;
@@ -131,13 +124,12 @@ body{
 /*        DATAPOINTS COMPONENT         */
 /* ----------------------------------- */
 .amexio-datapoints{
-  background-color: #FFFFFF;
-  color: #417505;
+  background-color: rgba(0, 43, 87, 0.7);
+  color: #F4C128;
   font-size: 125%;
   /* Border */
-  border-radius: 5px;
-  border: 2px solid #417505;
-  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.6);
+  border-radius: 0px;
+  border: 2px solid #F4C128;
 }
 .amexio-datapoints-title{
   font-size: 36px;
@@ -145,7 +137,7 @@ body{
 }
 .amexio-datapoints-footer{
   /* Background */
-  background: #417505; /* For browsers that do not support gradients */
+  background: #1FBCD2;
   border-radius: 5px;
   font-size: 100%;
   padding: 5px;
@@ -163,6 +155,7 @@ body{
 /* ----------------------------------- */
 .leftcolumn{
   min-height: 1000px;
+    background-color: transparent!important;
 }
 .amexio-sidenav-left{
  margin: 10px 0px 10px 10px;
@@ -171,7 +164,9 @@ body{
   overflow:hidden;
   float: left;
   border-right: none;
-  background-color: #F0EEE9!important;
+  background-color: transparent!important;
+  background-image: linear-gradient(to bottom, #FFFFFF, #0EAFD5, #4AD4BD);
+
 }
 .amexio-sidenav-left .nav-item{
   list-style: none;
@@ -182,7 +177,7 @@ body{
   width: 100%!important;
   border: none;
   border: 2px solid transparent;
-  color: #464a4c;
+  color: #2E4B73;
 }
 .amexio-sidenav-left .nav-item:hover {
   cursor: pointer;
@@ -196,20 +191,21 @@ body{
 }
 /* Styling for selected nav element */
 .amexio-link-selected{
-  background-color: #FFFFFF!important;
-  border: 2px solid #417505!important;
+  background-color: #02468D!important;
+    color: #FFFFFF!important;
+  border: 2px solid #1FBCD2!important;
   border-radius: 5px;
 }
 .amexio-link-selected a{
-  color: #CC0000 !important;
+  color: #FFFFFF!important;
 }
 .amexio-link-selected i{
-  color: #417505 !important;
+  color: #F4C128 !important;
 }
 /* Styling for subheaders between nav elements */
 .amexio-sidenav-left .amexio-sidenavbar-subheader{
-  border-top: none;
-    color: #417505;
+  border-top: #02468D;
+    color: #02468D;
 }
 .amexio-sidenav-left  .amexio-sidenavbar-subheader span{
   padding-right: 5px;
@@ -220,86 +216,97 @@ body{
 /* ----------------------------------- */
 /*              DATA GRID              */
 /* ----------------------------------- */
-/* @Sagar: See White Outline and discuss with me */
-/* @Sagar: Please rename this as amexio-grid-header */
 .amexio-grid-header{
-  background: #417505;
-  font-size: 15px;
-  padding: 20px 24px;
-  overflow: auto;
-  color: #FFFFFF;
+    font-size: 15px;
+    padding: 0px;
+    overflow: auto;
+    color: #1FBCD2;
+    font-weight: 300;
+    text-transform: capitalize;
+    border: transparent;
+    font-weight: 700;
 }
 .amexio-grid-header .form-group{
-  height: inherit;
-  margin:0px!important;
-  height: 0px!important;
+    height: inherit;
+    margin:0px!important;
+    height: 0px!important;
 }
 .amexio-grid-recordheader{
-  line-height: 15px;
-  color: #417505;
-  height:48px;
-  padding: 0px 24px 0px 24px!important;
-  text-align: left;
-  font-weight: bold;
+    line-height: 15px;
+    color: #FFFFFF;
+    height:48px;
+    border-bottom: 1px solid #E0E0E0;
+    font-weight: 500;
+    padding: 0px 24px 0px 24px!important;
+    text-align: left;
+    background-color: rgba(46, 75, 115, 1);
 }
 .amexio-grid-record{
   height:48px;
-  font-size: 14px;
+  font-size: 13px;
   line-height: 15px;
-  color: #464a4c;
-  border: 2px solid transparent!important;
+  color: #00C4FF;
+background-color: rgba(0, 43, 87, 1);
+    font-weight: 300;
 }
 .amexio-grid-record td{
-  padding: 0px 24px 0px 24px!important;
+    padding: 0px 24px 0px 24px!important;
 }
 .amexio-grid-record:hover{
-  background-color: beige;
-  border-right: 2px solid #417505!important;
-  border-left: 2px solid #417505!important;
+    color: #FFFFFF;
+    background-color: #02468D;
 }
 .amexio-grid-checkbox{
-  padding-left: 25px!important;
-  width: 50px!important;
-}
-.amexio-grid-bordered{
-  border: 2px solid #417505!important;
+    padding-left: 25px!important;
+    width: 50px!important;
 }
 .amexio-grid-bordered td{
-  border: none;
+    border-bottom: solid 1px #ddd!important;
+}
+/* Pagination CSS begins here */
+/* Container */
+.amexio-grid-pagination-outer{
+    height: 50px;
+    border-left: 1px solid #dddddd!important;
+    border-right: 1px solid #dddddd!important;
+    border-bottom: 1px solid #dddddd!important;
+    background-color: rgba(46, 75, 115, 1);
 }
 .amexio-grid-pagination {
-  color: rgba(255,255,255,0.70)!important;
-  float: right!important;
-  background-color: #FFFFFF;
+
 }
 .amexio-grid-pagination span{
-  margin-right: 20px;
-  display: inline-block;
-  float: left;
-  color: rgba(255,255,255,0.70)!important;
+    color: #1FBCD2!important;
+    margin-right: 20px;
+    display: inline-block;
+    float: left;
 }
+/* Dropdown of numbers */
 .amexio-grid-pagination span button{
-  color: #464a4c!important;
-  border: solid 1px #464a4c;
-}
-.amexio-grid-pagination-outer{
-  border: none;
+    color: #F4C128!important;
+    background-color: rgba(46, 75, 115, 1)!important;
+    border: solid 2px #00C4FF;
 }
 /* This is page level flyout */
 .amexio-grid-opertions .amexio-dropdown-menu{
-  color: rgba(255,255,255,0.70)!important;
-  background: #000000!important;
-  border: solid 1px #00CC00;
+    color: #FFFFFF!important;
+    background-color: rgba(46, 75, 115, 1)!important;
+    border: solid 2px #00C4FF;
 }
-
 .amexio-grid-groupby-seperator{
-  color: #6F6F6F!important;
+    height:48px;
+    border-bottom: 1px solid #E0E0E0!important;
+    padding: 12px 24px 0px 24px;
+    color: #6F6F6F!important;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
 }
 /* ----------------------------------- */
 /*            CONTACT LIST             */
 /* ----------------------------------- */
 .contactlist{
-  padding: 10px !important;
+  padding: 0px !important;
 }
 .contactlist .card-block{
   padding: 0px !important;
@@ -310,26 +317,24 @@ body{
   height: 80px;
   padding: 14px 16px;
   cursor: pointer;
+
 }
 .amexio-listbox .list-group-item {
   margin-bottom:0px;
-  border-bottom: none;
-  border-left: none;
-  border-right: none;
-  border-bottom: 1px solid #464a4c;
+    border-bottom: solid 1px #1FBCD2;
 }
 .amexio-listbox-list li img{
   width: 48px;
   height: 48px;
-  border-radius: 10px;
+  border-radius: 0px;
   margin-right: 20px;
   float: left;
-  border: 2px solid #417505;
+  border: 2px solid #F4C128;
 }
 .amexio-listbox-list li .title{
   float: left;
-  font-size: 18px;
-  color: #417505;
+  font-size: 16px;
+  color: #1FBCD2;
 font-weight: bold;
   padding-top: 8px;
 }
@@ -337,22 +342,22 @@ font-weight: bold;
 .contact-list-mini .title {
   float: left;
   padding-top: 8px;
-  font-size: 16px!important;
-  font-weight: bold;
+  font-size: 14px!important;
   color: #417505;
+    font-weight: 400;
 }
 .amexio-listbox-list .title a{
-  font-size: 18px;
-  color: #464a4c !important;
+  font-size: 14px;
+  color: #00C4FF !important;
   text-transform: lowercase;
-    font-weight: normal;
+  font-weight: 300;
 }
 /* ----------------------------------- */
 /*                 TABS                */
 /* ----------------------------------- */
 /* @Sagar: Rename as amexio-tabs */
 .amexio-tabs {
-  border-bottom: 2px solid #417505 !important;
+  border-bottom: 2px solid #1FBCD2 !important;
   margin-bottom: 20px;
 }
 /* @Sagar: Rename as amexio-tabs .link */
@@ -363,11 +368,12 @@ font-weight: bold;
   text-transform: capitalize;
   text-decoration:none;
   padding: 12px!important;
-  color: #464a4c!important;
+  color: #1FBCD2!important;
+    border: 2px solid transparent;
 }
 /* @Sagar: Rename as amexio-tabs .link:hover */
 .amexio-tabs .nav-link:hover{
-  border-color: transparent;
+  border: 2px solid #1FBCD2 !important;
 }
 /* @Sagar: Rename as amexio-tabs .link:after */
 .amexio-tabs .nav-link:after{
@@ -388,16 +394,10 @@ font-weight: bold;
 /* @Sagar: Rename as amexio-tabs .link .selected */
 .nav-link.active{
   /* Background */
-  background: #C0FF00; /* For browsers that do not support gradients */
-  background: linear-gradient(#E1FF00, #C0FF00);
-  background: -webkit-linear-gradient(#E1FF00, #C0FF00); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(#E1FF00, #C0FF00); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(#E1FF00, #C0FF00); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(#E1FF00, #C0FF00); /* Standard syntax */
-  border: 2px solid #417505 !important;
-  border-bottom: 1px solid #417505 !important;
+  background-color: #1FBCD2!important;
+  border: 2px solid #1FBCD2 !important;
   font-weight: bold;
-  color: #417505!important;
+  color: #FFFFFF!important;
 }
 /* @Sagar: Rename as amexio-tabs .link .selected:after */
 .amexio-tabs .nav-link:active:after{
@@ -413,20 +413,23 @@ font-weight: bold;
 /* @Sagar: Rename as amexio-treeview-records */
 .amexio-treeview-records{
   text-decoration: none !important;
-  color: #464a4c;
+  color: #00C4FF;
   display: table-cell!important;
   vertical-align: middle!important;
   padding: 13px 0px 13px 17px;
-  border-bottom: solid 1px #111111;
+  border: solid 2px transparent;
+    font-weight: 400;
 }
 /* @Sagar: Rename as amexio-treeview-records i */
 .amexio-treeview-records i{
   padding-right: 20px;
-  color: #ffffff;
+  color: #00C4FF;
 }
 /* @Sagar: Rename as amexio-treeview-records:hover */
 .amexio-treeview-records:hover{
-  background-color: #1b1d22!important;
+  border: solid 2px #1FBCD2 !important;
+  border-radius: 5px !important;
+    background-color: transparent !important;;
 }
 /* @Sagar: Rename as amexio-treeview-expandcollapseicon */
 .amexio-treeview-navigation-icons{
@@ -435,19 +438,19 @@ font-weight: bold;
 /* @Sagar: Rename as amexio-treeview-records-selected */
 .amexio-treeview-records-selected{
   text-decoration: none !important;
-  color: #417505!important;
+  color: #FFFFFF!important;
   display: table-cell!important;
   vertical-align: middle!important;
   padding: 13px 0px 13px 17px;
-  border: solid 2px #417505;
+  border: solid 2px #1FBCD2;
   border-radius: 5px;
-  background-color: beige!important;
-    font-weight: bold;
+  background-color: #02468D!important;
+  font-weight: bold;
 }
 /* @Sagar: Rename as amexio-treeview-records-selected i */
 .amexio-treeview-records-selected i{
   padding-right: 20px;
-  color: #417505;
+  color: #F4C128;
 }
 .amexio-treeview-ul li{
   padding-left: 0px!important;
@@ -457,7 +460,7 @@ font-weight: bold;
 /* ----------------------------------- */
 /* @Sagar: Rename as amexio-carousel */
 .amexio-carousel{
-  color: rgba(255,255,255,0.70)!important;
+  color: #00C4FF!important;
 }
 .amexio-carousel-backgound{
   background-color: transparent !important;
@@ -477,13 +480,13 @@ font-weight: bold;
 /* ----------------------------------- */
 /* CSS for Form Labels */
 label {
-  color: #417505!important;
+  color: #1FBCD2!important;
   display: inline-block;
   margin-top: 5px;
   margin-bottom: 5px;
   max-width: 100%;
   padding: 0 12px;
-  font-weight: bold;
+  color: #FFFFFF;
 }
 /* CSS for Patch around Form Elements */
 .form-control{
@@ -491,23 +494,26 @@ label {
   width: 100%;
   padding: 2px 12px;
   /* Text Properties */
-  font-family: 'PT Serif', serif;
+  font-family: 'Quicksand', sans-serif;
+     color: #FFFFFF;
   line-height: 2;
   /* Border and Background */
-  border: 2px solid #417505;
-  border-radius: 2px!important;
-  background-color: beige;
+  border: 2px solid #00C4FF;
+  border-radius: 5px!important;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 /* ----------------------------------- */
 /*        TEXT FIELD COMPONENT         */
 /* ----------------------------------- */
 .form-group input::placeholder{
+    color: #FFFFFF;
 }
 /* ----------------------------------- */
 /*         TEXT AREA COMPONENT         */
 /* ----------------------------------- */
 /* CSS for Text Area(Address 1 and 2) */
 .form-group textarea::placeholder{
+    color: #FFFFFF;
 }
 /* ----------------------------------- */
 /* COMPONENT - TYPEHEAD in simple form */
@@ -515,134 +521,111 @@ label {
 /* @Sagar: What is this for? */
 /*this component is available in Simple Form  of Nationality Fields*/
 .amexio-typeahead .form-control{
-  border: 2px solid #666666!important;
+  border: 2px solid #00C4FF!important;
+    color: #FFFFFF;
 }
 /* @Sagar: What is this style for? */
 /*For msg if TEXT INPUT FIELDS validation in SIMPLE FORM*/
 .popover{
-  border-radius: 0px;
+    border-radius: 0px;
+    background-color: #FFFFFF;
+    border: solid 2px #FFFFFF;
 }
 .popover-title {
-  background-color: #455A64;
-  color: #FFFFFF;
+  background-color: transparent;
+  color: #F4C128;
   font-size: 20px;
   border: none;
   border-radius: 0px;
 }
 .popover-content {
-  color: #455A64;
+  color: #2E4B73;
   border-radius: 0px;
-  color: rgba(0,0,0,0.87);
   font-size: 13px;
   font-size: 10px;
-  border-radius: 0px;
 }
 /* ----------------------------------- */
 /*      DROP DOWN FORM COMPONENT       */
 /* ----------------------------------- */
-/* @Sagar: Please rename as amexio-dropdown */
 .amexio-dropdown .btn{
-  border: 2px solid #417505;
+  border: 2px solid #00C4FF;
   border-radius: 4px!important;
-  color: #464a4c!important;
-  background-color: beige
+  color: #FFFFFF!important;
+  background-color: rgba(255, 255, 255, 0.1);
 }
-/* @Sagar: Please rename as amexio-dropdown-menu */
 .amexio-dropdown-menu{
-  background-color: beige !important;
-  border: 2px solid #417505;
+  background-color: #2E4B73 !important;
+  border: 2px solid #00C4FF;
   border-radius: 0px;
   padding: 10px;
   text-transform: capitalize;
   font-size: 14px;
 }
-/* @Sagar: Please rename as amexio-dropdown-records */
 .amexio-dropdown-records{
-  border: 1px solid #417505;
+  color: #FFFFFF;
+  border: 1px solid #00C4FF;
   border-bottom: none;
   padding: 5px;
 }
 .amexio-dropdown-records:last-child{
-  border: 1px solid #417505;
+  border: 1px solid #00C4FF;
 }
 /* @Sagar: Please rename as amexio-dropdown-records:hover */
 .amexio-dropdown-records:hover{
-  background-color: #000000!important;
+    color: #FFFFFF;
+  background-color: #1FBCD2!important;
 }
 /* ----------------------------------- */
 /*      DATE AND TIME COMPONENTS       */
 /* ----------------------------------- */
-/*@Sagar: Please rename as amexio-datetimecomponents-action */
-/*@Sagar: There is a slight border appearing behind. Please check */
 .input-group-addon{
   background: transparent;
-  color: #417505;
+  color: #1FBCD2;
   padding-left: 5px;
   border: none!important;
 }
-/*DATE-TIME -COMPONENT*/
-/*.amexio-datepicker ,.amexio-dropdown-records ,.dropdown-menu{
-  color: rgba(255,255,255,0.70)!important;
+.amexio-datepicker{
+  color: #00C4FF;
+  background-color: #2E4B73!important;
 }
-*/
-/* @Sagar: DISCUSS Why is this CSS interfering with Amexio-Dropdown? */
-/*.dropdown{
+.amexio-datepicker .dateSelected{
+  color: #F4C128;
+    background-color: #2E4B73!important;
+    border: solid 1px #F4C128;
 }
-*/
 /* ----------------------------------- */
 /*       ITEM SELECTOR COMPONENT       */
 /* ----------------------------------- */
-
-/*FOR ITEM SELECTOR CSS-SAGAR*/
 .amexio-itemselector{
-  background-color: beige !important;
+  border: 2px solid #00C4FF;
+  border-radius: 5px!important;
+  background-color: rgba(255, 255, 255, 0.1);
     padding: 10px;
 }
-/*For Itemselector ICONS-SAGAR*/
 .amexio-itemselector .fa{
-  color: #417505!important;
     padding: 5px;
     border-radius: 2px;
-  background-color: #FFFFFF;
-     border: 2px solid #417505;
+    color: #00C4FF;
+    border: 2px solid #00C4FF;
 }
-/* @Sagar: Please rename as amexio-itemselector-header */
 .amexio-itemselector-header{
-  border: solid 2px #417505;
+  border: none;
   font-size: 16px;
-  color: #ffffff;
+  color: #1FBCD2;
   height:48px;
-  padding: 0px 24px 0px 24px!important;
+  padding: 0px!important;
   text-align: left;
-  background-color: #417505!important;
-
+    background-color: transparent!important;
 }
-/* @Sagar: Please rename as amexio-itemselector-records */
 .amexio-itemselector-records{
     font-size: 14px;
-    color: #464a4c;
-    background-color: #FFFFFF;
-   border: 2px solid #417505;
+    color: #FFFFFF;
+    background-color: #2E4B73;
+    border: 2px solid #00C4FF;
 }
-/* @Sagar: Please rename as amexio-itemselector-records:hover */
 .amexio-itemselector-records:hover{
-  background-color: beige !important;
+    background-color: #1FBCD2 !important;
 }
-/*
-@Sagar: The CSS is being overriden by something in the code. Please check
-@Sagar: We need a 2 CSS handles one for the overall column component and the buttons in between. There names should be .amexio-itemselector-column{
-
-}
-.amexio-itemselector-buttons{
-
-}
-*/
-/*ITEM SELECTOR HEADER IN SIMPLE FORM
-.list-group-item:first-child {
-  border-top-right-radius: 0rem;
-  border-top-left-radius: 0rem;
-}*/
-
 /* ----------------------------------- */
 /*         CHECKBOX COMPONENT          */
 /* ----------------------------------- */
@@ -680,7 +663,7 @@ label {
   width: 14px;
   height: 14px;
   margin-top: -9px;
-  border: 2px solid #417505;
+  border: 2px solid #00C4FF;
   text-align: center;
   transition: all 0.4s ease;
 }
@@ -760,7 +743,7 @@ label {
 /*          COMPONENT - BUTTON         */
 /* ----------------------------------- */
 .btn {
-  font-family: 'PT Serif', serif;
+  font-family: 'Quicksand', sans-serif;
   -moz-user-select: none;
   background-image: none;
   border: 1px solid transparent;
@@ -780,24 +763,17 @@ label {
 }
 .btn-primary {
    /* Background */
-  background: #C0FF00; /* For browsers that do not support gradients */
-  background: linear-gradient(#E1FF00, #C0FF00);
-  background: -webkit-linear-gradient(#E1FF00, #C0FF00); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(#E1FF00, #C0FF00); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(#E1FF00, #C0FF00); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(#E1FF00, #C0FF00); /* Standard syntax */
-  border: 2px solid #417505 !important;
-  border-bottom: 2px solid #417505 !important;
+  background: #F4C128;
+  border: 2px solid #FFFFFF!important;
   font-weight: bold;
-  color: #417505!important;
+  color: #FFFFFF!important;
 }
 .btn-link {
-  background-color: transparent;
-  border-color: transparent;
+  background-color: transparent !important;
+  border:2px solid #1FBCD2;
   box-shadow: none;
   border-radius: 0;
-  color: #616161;
-  font-weight: 400;
+  color: #1FBCD2;
 }
 .btn-link:hover {
   color: #eeeeee;
@@ -847,10 +823,11 @@ label {
 .mainpanel {
   width: 100%;
   overflow: hidden;
-  color: #464a4c;
+  color: #00C4FF;
+    font-weight: 300;
 }
 .mainpanel .title {
-    font-family: 'PT Serif', serif;
+    font-family: 'Quicksand', sans-serif;
     font-weight: bold;
   font-size: 24px!important;
   line-height: 28px!important;
@@ -858,14 +835,14 @@ label {
   display: block
 }
 .mainpanel .subtitle {
-    font-family: 'PT Serif', serif;
+  font-family: 'Quicksand', sans-serif;
   font-size: 16px!important;
   line-height: 28px!important;
-    color: #417505;
+  color: #1FBCD2!important;
 }
 .mainpanel a {
   text-transform: lowercase;
-  color: #464a4c;
+  color: #00C4FF;
 }
 .mainpanel a :hover{
   text-decoration: underline;
@@ -873,12 +850,11 @@ label {
 .img-responsive {
   max-width: 100%;
   width: 100%;
-  border-top: 2px solid #417505;
-  border-bottom: 2px solid #417505;
+  border: 2px solid #F4C128;;
 }
 .actionpanel {
   margin-top: 20px;
-  color: #E84C1A;
+  color: #F4C128;
 }
 .actionpanel .iconbuttons {
   float: left;
@@ -897,7 +873,7 @@ label {
 .actionpanel .links a {
   text-transform: uppercase;
   text-decoration: none;
-  color: #E84C1A;
+  color: #1FBCD2;
 }
 /* ----------------------------------- */
 /*      LOGIN PAGE-ADDITIONAL CSS      */
@@ -910,7 +886,7 @@ label {
   margin-top:20px;
 }
 .forgot-password a{
-  color: #417505!important;
+  color: #00C4FF!important;
 }
 .forgot-password a:hover{
   text-decoration: underline;

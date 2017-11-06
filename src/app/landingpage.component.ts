@@ -60,14 +60,20 @@ export class LandingPageComponent implements OnInit {
       'name': 'Default', 'fileName': 'styles'
     }, {
       'name': 'Default', 'fileName': 'BTS-Orange'
-    },{
+    }, {
       'name': 'Default', 'fileName': 'BTS-Cyan'
-    },{
+    }, {
       'name': 'Default', 'fileName': 'BTS-Limegreen'
-    },{
+    }, {
       'name': 'Default', 'fileName': 'BTS-Polygon'
-    },{
+    }, {
       'name': 'Default', 'fileName': 'BTS-Red'
+    }, {
+      'name': 'Default', 'fileName': 'BTS-Matrix'
+    }, {
+      'name': 'Default', 'fileName': 'BTS-Pyramid'
+    }, {
+      'name': 'Default', 'fileName': 'BTS-DeepOrange'
     }]
   }
 
@@ -140,7 +146,7 @@ export class LandingPageComponent implements OnInit {
       //Font of Bootstrap
       let font1 = document.createElement('link');
       font1.setAttribute('rel', 'stylesheet');
-      font1.id='custom_theme';
+      font1.id = 'custom_theme';
       font1.href = "https://fonts.googleapis.com/css?family=Shadows+Into+Light";
       document.head.appendChild(font1);
 
