@@ -145,7 +145,7 @@ body{
 .amexio-datapoints-title{
     font-size: 36px;
     font-weight: bold;
-    color: #455A64; 
+    color: #455A64;
 }
 .amexio-datapoints-footer{
     /* Background */
@@ -440,6 +440,7 @@ body{
     vertical-align: middle!important;
     padding: 13px 0px 13px 17px;
     background-color: #eeeeee!important;
+  color: #00695C !important;
 }
 .amexio-treeview-records-selected i{
     padding-right: 20px;
